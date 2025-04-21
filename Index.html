@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <title>MamaEditatuFiesta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Victoria Fernández González" name="author">
+    <meta content="Sitio Web de la tienda Mama edita tu Fiesta" name="description">
+    <meta content="mamaeditatufiesta, fiestas, comuniones, cumpleaños, papeleriacreativa, papeleriapersonalizada" name="keywords">
+
+    <!--/* Tipo de letra Quicksand y Playball*/-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+    <!--/*Ubicación estilos*/-->
+    <link rel="stylesheet" href="css/estilosMEF.css">
+    <link rel="shortcut icon" href="img/logoCirc.svg">
+
+    <!--Scrip js jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  </head>
+  <body>
+    <!--Cabecera de la página-->
+    <header id="top">
+      <div>
+        <!-- Menú principal -->
+        <nav id="menu-principal">
+          <span><img id="abrirMenu" src="img/iconos_svg/Iconomenu.svg" alt="Icono Menú Hamburguesa" title="Abrir Menú"></span>
+          <ul id="menu">
+            <li><a href="#"><img id="cerrarMenu" src="img/iconos_svg/iconoCerrar.svg" alt="Icono Cerrar" title="Cerrar Menú"></a></li>
+            <li><a href="src/kitCumpleaños.html" class="item-menu">Kit Cumpleaños</a></li>
+            <li><a href="src/toppers.html" class="item-menu">Toppers</a></li>
+            <li><a href="src/personalizados.html" class="item-menu">Kit Personalizado</a></li>
+            <li><a href="src/sticker.html" class="item-menu">Sticker Personalizadas</a></li>
+            <li><a href="src/invitaciones.html" class="item-menu">Invitaciones</a></li>
+            <li><a href="src/menaje.html" class="item-menu">Decoración y Menaje</a></li>
+            <li><a href="src/SobreMi.html" class="item-menu">Sobre mí</a></li>
+          </ul>
+        </nav>
+        <a id="logoprin" href="Index.html">
+          <picture>
+            <img id="logoPrincipal" src="img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
+          </picture>
+        </a>
+        
+        <!--Bloque de enlaces de iconos -->
+        <nav id="navUsuario">
+          <ul>
+            <li><a href="src/accesoCuenta.html" aria-label="Ir a Usuario"><img src="img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Usuario</span></a></li>
+          </ul>
+        </nav>
+        <nav id="navCarrito">
+          <ul>
+            <li><a href="src/carrito.html" aria-label="Ir a Carrito"><img src="img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span>Carrito</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <p id="anuncio"><a href="#">Envío gratuito para pedidos mayores a 50€</a></p>
+    </header>
+    <!-- menu -->
+    <main id="main-index">
+      <!--Slider/carrusel-->
+      <section id="slider" class="contenedor-slider">
+        <div class="btn-left">
+          <img id="slider-prev" src="img/iconos_svg/IconflechaIzq.svg" alt="Icono Flecha Izquierda" title="Icono Flecha Izquierda">
+        </div>
+        <div class="btn-right">
+          <img id="slider-next" src="img/iconos_svg/IconFlechaDer.svg" alt="Icono Flecha Derecha" title="Icono Flecha Derecha">
+        </div>
+
+        <ul class="slider-wrapper">
+
+          <li class="current-slide">
+            <img src="img/archWeb/kit_personalizables/kit_cupcake_01.webp" title="Kit personalizables temática cupcake" alt="Kit personalizables temática cupcake">
+            <div class="caption">
+              <h2 class="slider-title">Kit personalizables temática cupcake</h2>
+            </div>
+          </li>
+
+          <li>
+            <img src="img/archWeb/kit_personalizables/kit_dinosaurio_01.webp" title="Kit personalizables temática dinosaurio" alt="Kit personalizables temática dinosaurio">
+            <div class="caption">
+              <h2 class="slider-title">Kit personalizables temática dinosaurio</h2>
+            </div>
+          </li>
+
+          <li>
+            <img src="img/archWeb/kit_personalizables/kit_circo_01.webp" title="Kit personalizables temática circo" alt="Kit personalizables temática circo">
+            <div class="caption">
+              <h2 class="slider-title">Kit personalizables temática circo</h2>
+            </div>
+          </li>
+
+          <li>
+            <img src="img/archWeb/kit_personalizables/kit_arcoiris_02.webp" title="Kit personalizables temática arcoiris" alt="Kit personalizables temática arcoiris">
+            <div class="caption">
+              <h2 class="slider-title">Kit personalizables temática arcoiris</h2>
+            </div>
+          </li>
+        </ul>
+      <!-- Sombras -->
+      <div class="slider-shadow"></div>
+      
+      <!-- Controles de Navegacion -->
+      <ul id="control-buttons" class="control-buttons">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div id="containerImgPrev" class="container-imgPrev">
+        <img id="img-prev" alt="Miniatura" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+      </div>
+      
+      </section>
+      <!--fin slider-->
+      <h1>¡Bienvenidos a nuestra web!</h1>
+      <p>Ofrecemos papelería creativa totalmente personalizada, perfecta para decorar cualquier evento. Desde etiquetas y
+        invitaciones hasta banners y envoltorios, cada pieza se diseña para reflejar el tema y estilo de tu celebración,
+        aportando un toque único que encantará a tus invitados.</p><br>
+        
+      <p>Explora nuestros kits ya pensados para que tu evento sea especial, que siguen una paleta de colores cuidadosamente seleccionada, para que no tengas que preocuparte por
+        nada en tu fiesta, desde los globos hasta el topper de la tarta. Si prefieres algo más exclusivo, también puedes
+        solicitarnos un diseño personalizado con el personaje de tu elección. ¡Hacemos que tu celebración sea ideal!</p>
+      
+      <div class="contenedor-productos">
+        <section class="seccion-index">
+          <h3 id="title-nuestrosPr">Nuestros productos</h3>
+          <article id="articulo1" class="item">
+            <h6 class="index-tittle-h6">Kit Cumpleaños</h6>
+            <a href="kitCumpleaños.html" class="producto">Kit Cumpleaños</a>
+          </article>
+          <article id="articulo2" class="item">
+            <h6 class="index-tittle-h6">Toppers</h6>
+            <a href="Toppers.html" class="producto">Toppers</a>
+          </article>
+          <article id="articulo3" class="item">
+            <h6 class="index-tittle-h6">Kit Personalizado</h6>
+            <a href="KitPersonalizado.html" class="producto">Kit Personalizado</a>
+          </article>
+          <article id="articulo4" class="item">
+            <h6 class="index-tittle-h6">Sticker Personalizadas</h6>
+            <a href="Sticker.html" class="producto">Sticker Personalizadas</a>
+          </article>
+          <article id="articulo5" class="item">
+            <h6 class="index-tittle-h6">Invitaciones</h6>
+            <a href="Invitaciones.html" class="producto">Invitaciones</a>
+          </article>
+          <article id="articulo6" class="item">
+            <h6 class="index-tittle-h6">Menaje</h6>
+            <a href="Menaje.html" class="producto">Menaje</a>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!--Pie de pagina-->
+    <footer>
+      <nav id="menu-social">
+        <a href="#" aria-label="Icono Whatsapp"><img src="img/iconos_svg/IconWhatsapp.svg" alt="Icono Whatsapp"
+            title="Ir a nuestra cuenta de Whatsapp"><span>Whatsapp</span></a>
+        <a href="#" aria-label="Icono Instagram"><img src="img/iconos_svg/IconInstagram.svg" alt="Icono Instagram"
+            title="Ir a nuestra cuenta de Instagram"><span>Instagram</span></a>
+        <a href="#" aria-label="Icono Facebook"><img src="img/iconos_svg/IconFacebook.svg" alt="Icono Facebook"
+            title="Ir a nuestra cuenta de Facebook"><span>Facebook</span></a>
+        <a href="#" aria-label="Icono Pinterest"><img src="img/iconos_svg/IconPinterest.svg" alt="Icono Pinterest"
+            title="Ir a nuestra cuenta de Pinterest"><span>Pinterest</span></a>
+      </nav>
+      <div id="footer-central">
+        <form class="footer-form" action="/proceso-suscripcion" method="POST">
+          <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
+          <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
+          <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
+          <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
+          <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
+          <!--<img src="img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
+        </form>
+        <div class="central-footer">
+          <h5 class="footer-contacto"><a href="contacto.html">¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</a></h5>
+          <nav class="menu-footer">
+            <ul id="lista-footer">
+              <li><a href="src/kitCumpleaños.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="src/toppers.html" class="item-menu">Toppers</a></li>
+              <li><a href="src/personalizados.html" class="item-menu">Kit Personalizado</a></li>
+              <li><a href="src/sticker.html" class="item-menu">Sticker Personalizadas</a></li>
+              <li><a href="src/invitaciones.html" class="item-menu">Invitaciones</a></li>
+              <li><a href="src/menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="src/SobreMi.html" class="item-menu">Sobre mí</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="info">
+          <div id="info-logo">
+            <a href="Index.html">
+              <img class="logo-pq" src="img/logoCirc.svg" alt="Logo MamaEditatuFiesta Secundario" title="Ir a inicio">
+            </a>
+          </div>
+          <div id="info-tex">
+            <span class="info-footer"><img src="img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"> Envíos a Península y Baleares</span><br>
+            <span class="info-footer"><img src="img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"> &nbsp; Métodos de pago
+              <img src="img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa">
+              <img src="img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard">
+              <img src="img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal">
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="politicas">
+          <a href="#" aria-label="Visitar nuestra politica de Cookies">Política de Cookies</a>&nbsp; · &nbsp;<br>
+          <a href="#" aria-label="Visitar nuestro aviso legal">Aviso Legal</a> &nbsp; · &nbsp;
+          <a href="#" aria-label="Visitar nuestra politica de Privacidad"> Privacidad</a> &nbsp; · &nbsp;
+          <a href="#" aria-label="Visitar nuestra politica de Accesibilidad">Accesibilidad</a>
+          <small>&copy; 2025 MAMAEDITATUFIESTA</small>
+      </div>
+    </footer>
+    <!-- SCRIPT -->
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
