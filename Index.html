@@ -112,7 +112,7 @@
       </ul>
 
       <div id="containerImgPrev" class="container-imgPrev">
-        <img id="img-prev" alt="Miniatura" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/>
+        <img id="img-prev" alt="Miniatura" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
       </div>
       
       </section>
@@ -169,14 +169,16 @@
             title="Ir a nuestra cuenta de Pinterest"><span>Pinterest</span></a>
       </nav>
       <div id="footer-central">
-        <form class="footer-form" action="/proceso-suscripcion" method="POST">
-          <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
-          <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
-          <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
-          <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
-          <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
-          <!--<img src="img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
-        </form>
+        <div class="footer-form-newslet">
+          <form class="footer-form" action="/proceso-suscripcion" method="POST">
+            <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
+            <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
+            <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
+            <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
+            <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
+            <!--<img src="img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
+          </form>
+        </div>
         <div class="central-footer">
           <h5 class="footer-contacto"><a href="contacto.html">¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</a></h5>
           <nav class="menu-footer">
@@ -192,7 +194,7 @@
           </nav>
         </div>
 
-        <div id="info">
+        <div class="logo-footer" id="info">
           <div id="info-logo">
             <a href="Index.html">
               <img class="logo-pq" src="img/logoCirc.svg" alt="Logo MamaEditatuFiesta Secundario" title="Ir a inicio">
@@ -209,10 +211,10 @@
         </div>
       </div>
       <div id="politicas">
-          <a href="#" aria-label="Visitar nuestra politica de Cookies">Política de Cookies</a>&nbsp; · &nbsp;<br>
-          <a href="#" aria-label="Visitar nuestro aviso legal">Aviso Legal</a> &nbsp; · &nbsp;
-          <a href="#" aria-label="Visitar nuestra politica de Privacidad"> Privacidad</a> &nbsp; · &nbsp;
-          <a href="#" aria-label="Visitar nuestra politica de Accesibilidad">Accesibilidad</a>
+          <a href="src/Politicas.html" aria-label="Visitar nuestra politica de Cookies">Política de Cookies</a>&nbsp; · &nbsp;<br>
+          <a href="src/AvisoLegal.html" aria-label="Visitar nuestro aviso legal">Aviso Legal</a> &nbsp; · &nbsp;
+          <a href="src/PolíticaPrivacidad.html" aria-label="Visitar nuestra politica de Privacidad"> Privacidad</a> &nbsp; · &nbsp;
+          <a href="src/Accesibilidadweb.html" aria-label="Visitar nuestra politica de Accesibilidad">Accesibilidad</a>
           <small>&copy; 2025 MAMAEDITATUFIESTA</small>
       </div>
     </footer>

@@ -32,7 +32,6 @@ a {
 a:hover {
   cursor: pointer;
 }
-
 ul {
   list-style: none;
   padding-left: 0;
@@ -880,28 +879,29 @@ footer > nav#menu-social > a > img{
 footer > nav#menu-social > a span{
   display: none;
 }
-footer > div#footer-central > form.form-newsletter {
+footer > div#footer-central > div.footer-form-newslet 
+footer > div#footer-central > div.footer-form-newslet > form.footer-form {
   max-width: 31.2rem;
   width: 100%;
 }
-footer > div#footer-central > form > label{
+footer > div#footer-central > div.footer-form-newslet > form > label{
   display: flex;
   flex-direction: row;
   font-size: 0.85rem;
 }
-footer > div#footer-central > form > input#newsletter{
+footer > div#footer-central > div.footer-form-newslet > form > input#newsletter{
   margin-top:0.75rem;
   border: 2px solid var(--azul);
   border-radius: 8px;
   width: 48%;
   height: 2.5rem;
 }
-footer > div#footer-central > form > input#newsletter::placeholder {
+footer > div#footer-central > div.footer-form-newslet > form > input#newsletter:placeholder {
   color: var(--azul);
   font-size: 1rem;
   padding: 0.5rem;
 }
-footer > div#footer-central > form > button#btn-subscrib{
+footer > div#footer-central > div.footer-form-newslet > form > button#btn-subscrib{
   background-color: var(--azul);
   border: 2px solid var(--azul);
   color: var(--blanco);
@@ -920,35 +920,26 @@ footer > div#footer-central > div#info {
   flex-wrap: wrap;
   gap: 1rem;
   flex-direction: row;
-  justify-content: flex-start;
   color: var(--gris);
 }
-
-#info-logo img {
+.logo-pq{
   display: flex;
-  width: 7rem;
-  margin-left: 0.65rem;
+  width: 9rem;
 }
-
-#info-tex {
+div#info > div#info-tex {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
-
 span.info-footer {
   display: flex;
   align-items: center;
   padding-bottom: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem; 
 }
-
 span.info-footer img + img {
   margin-left: 0.25rem;
   width: 1.3rem;
 }
-
 div#politicas{
   display: flex;
   flex-flow: row wrap;
@@ -1078,10 +1069,21 @@ div#politicas > small{
   .carta-productos{
     flex-basis: 18%;
   }
+  /*Menu migas de pan*/
+  .migasPan{
+    padding-top: 1.5rem;
+  }
+  footer{
+    justify-content: space-between;
+    align-items: center;
+  }
   footer > div#footer-central {
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1.25rem; 
+    margin-left: 2rem;
   }
   footer > nav#menu-social{
     margin: 0.75rem;
@@ -1092,38 +1094,45 @@ div#politicas > small{
   footer > div#politicas > a{
     font-size: 1.2rem;
   }
-  #footer-central > div.central-footer{
+  #footer-central > div.central-footer {
     order: 2;
-    gap: 3rem;
+    width: 30%;
+    margin-left: 3rem;
+  }
+  #footer-central > div.logo-footer {
+    width: 30%;
+    
   }
   .footer-contacto {
+    text-align: center;
     order: 1;
     margin-top: 0.3rem;
     margin-bottom: 0;
   }
   #info-logo {
     order: 0;
-    flex: 100%;
-    width: 5rem;
+    flex: 30%;
   }
-  .footer-form {
-    order: 4;
-    padding-left: 1rem;
+  .info-footer{
+    font-size: 2rem;
+  }
+  #footer-central > div.footer-form-newslet{
+    width: 30%;
+    margin-left: 2rem;
   }
   footer > div#politicas{
+    margin-top: 2rem;
     padding: 0;
   }
   footer > div#politicas > a{
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
   .tit-footer{
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1.1rem;
   }
-  footer > div#footer-central{
-    margin:0 0.25rem;
-  }
+
   div#info-logo > a > img {
     width: 11rem;
   }
