@@ -121,14 +121,16 @@
             title="Ir a nuestra cuenta de Pinterest"><span>Pinterest</span></a>
       </nav>
       <div id="footer-central">
-        <form class="footer-form" action="/proceso-suscripcion" method="POST" class="form-newsletter">
-          <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
-          <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
-          <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required />
-          <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
-          <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
-          <!--<img src="../img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
-        </form>
+        <div class="footer-form-newslet">
+          <form class="footer-form" action="/proceso-suscripcion" method="POST">
+            <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
+            <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
+            <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
+            <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
+            <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
+            <!--<img src="img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
+          </form>
+        </div>
         <h5 class="footer-contacto"><a href="contacto.html">¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</a></h5>
 
         <div id="info">

@@ -91,18 +91,20 @@
                 <label for="paypal"> PayPal <img src="../img/iconos_svg/IconoPaypal.svg" alt="PayPal" class="icono"></label>
               </div>
             
-            <p class="info">
-              <input type="checkbox" name="aceptar-terminos" class="info"> He leído y acepto la política de privacidad y el tratamiento de mis datos según lo especificado en la misma (ver <a href="PolíticaPrivacidad.html">Políticas de Privacidad)*</a>
-            </p>
+              <label class="info">
+                <input type="checkbox" name="aceptar-terminos" class="info">
+                He leído y acepto la política de privacidad y el tratamiento de mis datos según lo especificado en la misma.
+                (ver <a href="PolíticaPrivacidad.html">Políticas de Privacidad*</a>)
+              </label>
             <button type="submit" id="btn-pagar" class="btn-rosa">Ir al pago</button>
           </form>
         </section>
     </main>
-    <!--Pie de pagina-->
+        <!--Pie de pagina-->
     <footer>
       <nav id="menu-social">
         <a href="#" aria-label="Icono Whatsapp"><img src="../img/iconos_svg/IconWhatsapp.svg" alt="Icono Whatsapp"
-            title="Ir a nuestra cuenta de Whatsapp" /><span>Whatsapp</span></a>
+            title="Ir a nuestra cuenta de Whatsapp"><span>Whatsapp</span></a>
         <a href="#" aria-label="Icono Instagram"><img src="../img/iconos_svg/IconInstagram.svg" alt="Icono Instagram"
             title="Ir a nuestra cuenta de Instagram"><span>Instagram</span></a>
         <a href="#" aria-label="Icono Facebook"><img src="../img/iconos_svg/IconFacebook.svg" alt="Icono Facebook"
@@ -111,41 +113,57 @@
             title="Ir a nuestra cuenta de Pinterest"><span>Pinterest</span></a>
       </nav>
       <div id="footer-central">
-        <form class="footer-form" action="/proceso-suscripcion" method="POST" class="form-newsletter">
-          <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
-          <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
-          <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required />
-          <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
-          <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
-          <!--<img src="../img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
-        </form>
-        <h5 class="footer-contacto"><a href="contacto.html">¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</a></h5>
+        <div class="footer-form-newslet">
+          <form class="footer-form" action="/proceso-suscripcion" method="POST">
+            <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
+            <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
+            <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
+            <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
+            <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
+            <!--<img src="../img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
+          </form>
+        </div>
+        <div class="central-footer">
+          <h5 class="footer-contacto"><a href="contacto.html">¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</a></h5>
+          <nav class="menu-footer">
+            <ul id="lista-footer">
+              <li><a href="kitCumpleaños.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="toppers.html" class="item-menu">Toppers</a></li>
+              <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
+              <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
+              <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
+              <li><a href="menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
+            </ul>
+          </nav>
+        </div>
 
-        <div id="info">
+        <div class="logo-footer" id="info">
           <div id="info-logo">
-            <a href="Index.html">
-              <picture><img class="logo-pq"src="../img/logoCirc.svg" alt="Logo MamaEditatuFiesta Secundario" title="Ir a inicio"/></picture>
+            <a href="../Index.html">
+              <img class="logo-pq" src="../img/logoCirc.svg" alt="Logo MamaEditatuFiesta Secundario" title="Ir a inicio">
             </a>
           </div>
           <div id="info-tex">
-            <span class="info-footer"><img src="../img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"/> Envíos a Península y Baleares</span><br>
-            <span class="info-footer"><img src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"/> &nbsp; Métodos de pago
-              <img src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa" />
-              <img src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard" />
-              <img src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal" />
+            <span class="info-footer"><img src="../img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"> Envíos a Península y Baleares</span><br>
+            <span class="info-footer"><img src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"> &nbsp; Métodos de pago
+              <img src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa">
+              <img src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard">
+              <img src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal">
             </span>
           </div>
         </div>
       </div>
       <div id="politicas">
-        <a href="Politicas.html" aria-label="Visitar nuestra politica de Cookies">Política de Cookies</a>&nbsp; · &nbsp;<br>
-        <a href="AvisoLegal.html" aria-label="Visitar nuestro aviso legal">Aviso Legal</a> &nbsp; · &nbsp;
-        <a href="PolíticaPrivacidad.html" aria-label="Visitar nuestra politica de Privacidad"> Privacidad</a> &nbsp; · &nbsp;
-        <a href="Accesibilidadweb.html" aria-label="Visitar nuestra politica de Accesibilidad">Accesibilidad</a>
-        <small>&copy; 2025 MAMAEDITATUFIESTA</small>
+          <a href="Politicas.html" aria-label="Visitar nuestra politica de Cookies">Política de Cookies</a>&nbsp; · &nbsp;<br>
+          <a href="AvisoLegal.html" aria-label="Visitar nuestro aviso legal">Aviso Legal</a> &nbsp; · &nbsp;
+          <a href="PolíticaPrivacidad.html" aria-label="Visitar nuestra politica de Privacidad"> Privacidad</a> &nbsp; · &nbsp;
+          <a href="Accesibilidadweb.html" aria-label="Visitar nuestra politica de Accesibilidad">Accesibilidad</a>
+          <small>&copy; 2025 MAMAEDITATUFIESTA</small>
       </div>
     </footer>
-  <!-- SCRIPT -->
-  <script src="../js/script.js"></script>
+    <!-- SCRIPT -->
+    <script src="js/script.js"></script>
+
   </body>
 </html>

@@ -32,6 +32,9 @@ a {
 a:hover {
   cursor: pointer;
 }
+.error-newsletter{
+  display: none;
+}
 ul {
   list-style: none;
   padding-left: 0;
