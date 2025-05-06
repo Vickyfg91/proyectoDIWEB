@@ -12,6 +12,8 @@
     <!--/* Tipo de letra Quicksand y Playball*/-->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
     <!--/*Ubicación estilos*/-->
     <link rel="stylesheet" href="../css/estilosMEF.css">
@@ -91,6 +93,42 @@
             <p>En definitiva, te aseguramos que pondremos todo nuestro esfuerzo y cariño para que tú y tus seres queridos disfruten de una fiesta única. Nos encargamos de todo, enviando todo lo necesario a tu casa para que solo tengas que preocuparte de disfrutar al máximo de tu evento.</p>
         </section>
         <p>Sophia González</p>
+      </article>
+      <h3>Nuestro Video Promocional</h3>
+      <article id="reproductor">
+        <h4>Video</h4>
+          <section aria-label="Reproductor" id="reproductorVideo">
+            <div id="contenedor">
+              <video id="video" preload="auto" tabindex="0" aria-label="Reproductor de video" class="video-promo">
+                <source src="../video/PromoMEF.mp4" type="video/mp4">
+                <source src="../video/PromoMEF.ogv" type="video/ogv">
+                <source src="../video/PromoMEF.webm" type="video/webm">
+              </video>
+            </div>
+            <div id="barra">
+              <span id="tiempoActual">0:00</span>
+              <input type="range" id="barraTiempo" value="0" max="100">
+              <span id="tiempoTotal">0:00</span>
+              <button id="restart" class="reproductor" title="Botón Comenzar desde el inicio"><i class="fa fa-redo"></i></button>
+              <button id="fullscreen" class="reproductor" title="Botón Pantalla Completa"><i class="fa fa-expand"></i></button>
+            </div>
+            <div id="botonera">
+              <button id="reproducir" class="reproductor" title="Botón Play"><i id="btnPlay" class="fas fa-play"></i></button>
+              <button id="parar" class="reproductor" title="Botón Stop"><i class="fa fa-stop"></i></button>
+              <button id="atras" class="reproductor" title="Botón Atrás"><i class="fa fa-backward"></i></button>
+              <button id="adelante" class="reproductor" title="Botón Adelante"><i class="fa fa-forward"></i></button>
+              <span id="volumen">
+                <button id="mute" class="reproductor" title="Botón Silenciar"><i id="btnMute" class="fa fa-volume-up"></i></button>
+                <input type="range" id="volume" value="1" max="1" step="0.01">
+              </span>
+              <button id="lento" class="reproductor" title="Botón Lento">
+                <img src="../img/iconos_svg/fluent-mdl2_rewind-point-five-x.svg" alt="Lento" class="fa fa-minus">
+              </button>
+              <button id="rapido" class="reproductor" title="Botón Rápido">
+                <img src="../img/iconos_svg/fluent-mdl2_fast-forward-point-five-x.svg" alt="Rapido" class="fa fa-plus">
+              </button>
+            </div>
+          </section>
       </article>
     </main>
     <!--Pie de pagina-->
