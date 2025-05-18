@@ -12,8 +12,6 @@
     <!--/* Tipo de letra Quicksand y Playball*/-->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
     <!--/*Ubicación estilos*/-->
     <link rel="stylesheet" href="../css/estilosMEF.css">
@@ -28,37 +26,45 @@
     <header id="top">
       <div>
         <!-- Menú principal -->
-        <nav id="menu-principal">
-          <span><img id="abrirMenu" src="../img/iconos_svg/Iconomenu.svg" alt="Icono Menú Hamburguesa" title="Abrir Menú"></span>
-          <ul id="menu">
-            <li><a href="#"><img id="cerrarMenu" src="../img/iconos_svg/iconoCerrar.svg" alt="Icono Cerrar" title="Cerrar Menú"></a></li>
-            <li><a href="src/kitCumpleaños.html" class="item-menu">Kit Cumpleaños</a></li>
-            <li><a href="src/toppers.html" class="item-menu">Toppers</a></li>
-            <li><a href="src/personalizados.html" class="item-menu">Kit Personalizado</a></li>
-            <li><a href="src/sticker.html" class="item-menu">Sticker Personalizadas</a></li>
-            <li><a href="src/invitaciones.html" class="item-menu">Invitaciones</a></li>
-            <li><a href="src/menaje.html" class="item-menu">Decoración y Menaje</a></li>
-            <li><a href="src/SobreMi.html" class="item-menu">Sobre mí</a></li>
-          </ul>
-        </nav>
-        <a id="logoprin" href="../Index.html">
-          <picture>
-            <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
-          </picture>
-        </a>
-        
-        <!--Bloque de enlaces de iconos -->
-        <nav id="navUsuario">
-          <ul>
-            <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Usuario</span></a></li>
-          </ul>
-        </nav>
-        <nav id="navCarrito">
-          <ul>
-            <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span>Carrito</span></a></li>
-          </ul>
-        </nav>
+        <div class="fila-2">
+          <nav id="menu-principal">
+            <span><img id="abrirMenu" src="../img/iconos_svg/Iconomenu.svg" alt="Icono Menú Hamburguesa" title="Abrir Menú"></span>
+            <ul id="menu">
+              <li><a href="#"><img id="cerrarMenu" src="../img/iconos_svg/iconoCerrar.svg" alt="Icono Cerrar" title="Cerrar Menú"></a></li>
+              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="toppers.html" class="item-menu">Toppers</a></li>
+              <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
+              <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
+              <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
+              <li><a href="menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="fila-1">
+          <a id="logoprin" href="Index.html">
+            <picture>
+              <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
+            </picture>
+          </a>
+          
+          <!--Bloque de enlaces de iconos -->
+          <div class="iconos-derecha">
+            <nav id="navUsuario">
+              <ul>
+                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
+              </ul>
+            </nav>
+            <nav id="navCarrito">
+              <ul>
+                <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span>Carrito(0)</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
+      <div id="vacio"></div>
+      <p id="anuncio"><a href="#">Envío gratuito para pedidos mayores a 50€</a></p>
     </header>
     <!-- menu -->
     <main id="main-sobreMi">
@@ -71,24 +77,24 @@
         <h2 id="sobreMi">Los inicios</h2>
         <img src="../img/sobremi.webp" alt="Fotografia de la creadora de MamaEditaTuFiesta" title="Fotografia de la creadora de MamaEditaTuFiesta">
         
-        <section id="introduccion">
+        <section class="parrafos" id="introduccion">
           <h3>Quien soy</h3>
           <p><strong>MamaEditaTuFiesta</strong> nació en abril de 2018, tras organizar la fiesta de la primera Comunión de mi sobrina mayor. Aunque la idea ya rondaba en mi mente desde mucho antes, ya que siempre me han apasionado las manualidades y la organización de fiestas. En cada cumpleaños que organizaba, añadía mis pequeños toques y detalles personales.</p>
           <p>Mi objetivo era crear una fiesta familiar original, llena de cariño y detalles con mi estilo único, pero con un toque de sofisticación, que pareciera haber sido diseñada por un profesional. Con la llegada de mi hija, quise hacer de sus fiestas algo especial, pero a veces la organización resultaba más caótica de lo que esperaba. Así, nació la idea de crear este espacio para hacer todo más armonioso y sencillo.</p>
         </section>
 
-        <section id="mision">
+        <section class="parrafos" id="mision">
             <h3>Nuestra Misión</h3>
             <p>Soy desarrolladora web y una apasionada del diseño y el interiorismo. Por eso, creo que me encanta tanto la idea de ayudar a otras personas a diseñar fiestas bonitas. Sin darme cuenta, me convertí en una <strong>Party Planner</strong>. Diseñé y creé una fiesta llena de detalles hechos a mano, ya que no encontraba en las tiendas españolas lo que tenía en mente. Pensé que a otras madres les ocurriría lo mismo, y de ahí surgió la idea de crear este proyecto.</p>
             <p>Así comenzó esta aventura, con mucho trabajo, cariño y dedicación, cuidando cada detalle con esmero.</p>
         </section>
 
-        <section id="nuestros-servicios">
+        <section class="parrafos" id="nuestros-servicios">
             <h3>¿Qué ofrecemos?</h3>
             <p>Nos dedicamos a diseñar y producir fiestas únicas, y también ofrecemos servicios de asesoría y producción de eventos, creando para ti una fiesta que tenga una personalidad propia, elegante y completamente a tu gusto.</p>
         </section>
 
-        <section id="compromiso">
+        <section class="parrafos" id="compromiso">
             <h3>Compromiso con tu Fiesta</h3>
             <p>En definitiva, te aseguramos que pondremos todo nuestro esfuerzo y cariño para que tú y tus seres queridos disfruten de una fiesta única. Nos encargamos de todo, enviando todo lo necesario a tu casa para que solo tengas que preocuparte de disfrutar al máximo de tu evento.</p>
         </section>

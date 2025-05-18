@@ -26,60 +26,70 @@
     <header id="top">
       <div>
         <!-- Menú principal -->
-        <nav id="menu-principal">
-          <span><img id="abrirMenu" src="../img/iconos_svg/Iconomenu.svg" alt="Icono Menú Hamburguesa" title="Abrir Menú"></span>
-          <ul id="menu">
-            <li><a href="#"><img id="cerrarMenu" src="../img/iconos_svg/iconoCerrar.svg" alt="Icono Cerrar" title="Cerrar Menú"></a></li>
-            <li><a href="src/kitCumpleaños.html" class="item-menu">Kit Cumpleaños</a></li>
-            <li><a href="src/toppers.html" class="item-menu">Toppers</a></li>
-            <li><a href="src/personalizados.html" class="item-menu">Kit Personalizado</a></li>
-            <li><a href="src/sticker.html" class="item-menu">Sticker Personalizadas</a></li>
-            <li><a href="src/invitaciones.html" class="item-menu">Invitaciones</a></li>
-            <li><a href="src/menaje.html" class="item-menu">Decoración y Menaje</a></li>
-            <li><a href="src/SobreMi.html" class="item-menu">Sobre mí</a></li>
-          </ul>
-        </nav>
-        <a id="logoprin" href="../Index.html">
-          <picture>
-            <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
-          </picture>
-        </a>
-        
-        <!--Bloque de enlaces de iconos -->
-        <nav id="navUsuario">
-          <ul>
-            <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Usuario</span></a></li>
-          </ul>
-        </nav>
-        <nav id="navCarrito">
-          <ul>
-            <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span>Carrito</span></a></li>
-          </ul>
-        </nav>
+        <div class="fila-2">
+          <nav id="menu-principal">
+            <span><img id="abrirMenu" src="../img/iconos_svg/Iconomenu.svg" alt="Icono Menú Hamburguesa" title="Abrir Menú"></span>
+            <ul id="menu">
+              <li><a href="#"><img id="cerrarMenu" src="../img/iconos_svg/iconoCerrar.svg" alt="Icono Cerrar" title="Cerrar Menú"></a></li>
+              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="toppers.html" class="item-menu">Toppers</a></li>
+              <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
+              <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
+              <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
+              <li><a href="menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="fila-1">
+          <a id="logoprin" href="Index.html">
+            <picture>
+              <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
+            </picture>
+          </a>
+          
+          <!--Bloque de enlaces de iconos -->
+          <div class="iconos-derecha">
+            <nav id="navUsuario">
+              <ul>
+                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
+              </ul>
+            </nav>
+            <nav id="navCarrito">
+              <ul>
+                <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span>Carrito(0)</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
+      <div id="vacio"></div>
     </header>
     <!-- menu -->
     <main id="main-politicas">
       <nav class="migasPan" aria-label="Ruta de navegación">
         <a href="../Index.html">INICIO</a> /
-        <span aria-current="page"> ACCESIBILIDAD WEB</span>
+        <span class="migasPanSpan" aria-current="page"> ACCESIBILIDAD WEB</span>
       </nav>
         <h1>Accesibilidad web</h1>
           <article class="recAzul">
-            <h2>Declaración de Accesibilidad de Nuestros Sitios Web</h2>
+            <h2 class="title-politicas">Declaración de Accesibilidad de Nuestros Sitios Web</h2>
               <p>
                 En MamaEditaTuFiesta, estamos plenamente comprometidos con los principios de inclusión digital. Por ello, trabajamos continuamente para satisfacer y superar los requisitos establecidos en las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1, nivel AA. Nuestro objetivo es garantizar que nuestros sitios web públicos sean accesibles y brindan una experiencia inclusiva para todas las personas, incluidas aquellas con discapacidades visuales, auditivas, cognitivas o motoras.
               </p>
-            <h2>Compromiso con la Accesibilidad</h2>
-              <p>
-                Nos esforzamos por:
-              </p>
-                <ul>
-                  <li>Mejorar de forma continua la accesibilidad en nuestros sitios web.</li>
-                  <li>Diseñar interfaces que sean perceptibles, operables, comprensibles y robustas para todas las personas.</li>
-                  <li>Ofrecer soluciones inclusivas que respondan a las necesidades de todos nuestros</li>
-                </ul>
-            <h2>Cómo reportar problemas de accesibilidad</h2>
+            <section>
+              <h2 class="title-politicas">Compromiso con la Accesibilidad</h2>
+                <p>
+                  Nos esforzamos por:
+                </p>
+                  <ul>
+                    <li>Mejorar de forma continua la accesibilidad en nuestros sitios web.</li>
+                    <li>Diseñar interfaces que sean perceptibles, operables, comprensibles y robustas para todas las personas.</li>
+                    <li>Ofrecer soluciones inclusivas que respondan a las necesidades de todos nuestros</li>
+                  </ul>
+            </section>
+            <section>
+              <h2 class="title-politicas">Cómo reportar problemas de accesibilidad</h2>
               <p>
                 Si encuentras dificultades para acceder a nuestros sitios web o tienes sugerencias para mejorar su accesibilidad, por favor, contáctanos en info@mamaeditatufiesta.com.<br>
                 Al enviarnos tus comentarios, te agradecemos que especifiques:
@@ -89,7 +99,7 @@
                   <li>La tecnología de apoyo que utilizaste, si corresponde (por ejemplo, lectores de pantalla o dispositivos de entrada alternativos).</li>
                 </ul>
                 Nuestro equipo revisará tu solicitud con prioridad y realizará los ajustes necesarios para garantizar una experiencia óptima.
-              
+            </section>              
         </article>
     </main>
     <!--Pie de pagina-->

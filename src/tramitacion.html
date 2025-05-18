@@ -26,37 +26,45 @@
     <header id="top">
       <div>
         <!-- Menú principal -->
-        <nav id="menu-principal">
-          <span><img id="abrirMenu" src="../img/iconos_svg/Iconomenu.svg" alt="Icono Menú Hamburguesa" title="Abrir Menú"></span>
-          <ul id="menu">
-            <li><a href="#"><img id="cerrarMenu" src="../img/iconos_svg/iconoCerrar.svg" alt="Icono Cerrar" title="Cerrar Menú"></a></li>
-            <li><a href="src/kitCumpleaños.html" class="item-menu">Kit Cumpleaños</a></li>
-            <li><a href="src/toppers.html" class="item-menu">Toppers</a></li>
-            <li><a href="src/personalizados.html" class="item-menu">Kit Personalizado</a></li>
-            <li><a href="src/sticker.html" class="item-menu">Sticker Personalizadas</a></li>
-            <li><a href="src/invitaciones.html" class="item-menu">Invitaciones</a></li>
-            <li><a href="src/menaje.html" class="item-menu">Decoración y Menaje</a></li>
-            <li><a href="src/SobreMi.html" class="item-menu">Sobre mí</a></li>
-          </ul>
-        </nav>
-        <a id="logoprin" href="../Index.html">
-          <picture>
-            <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
-          </picture>
-        </a>
-        
-        <!--Bloque de enlaces de iconos -->
-        <nav id="navUsuario">
-          <ul>
-            <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Usuario</span></a></li>
-          </ul>
-        </nav>
-        <nav id="navCarrito">
-          <ul>
-            <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span>Carrito</span></a></li>
-          </ul>
-        </nav>
+        <div class="fila-2">
+          <nav id="menu-principal">
+            <span><img id="abrirMenu" src="../img/iconos_svg/Iconomenu.svg" alt="Icono Menú Hamburguesa" title="Abrir Menú"></span>
+            <ul id="menu">
+              <li><a href="#"><img id="cerrarMenu" src="../img/iconos_svg/iconoCerrar.svg" alt="Icono Cerrar" title="Cerrar Menú"></a></li>
+              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="toppers.html" class="item-menu">Toppers</a></li>
+              <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
+              <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
+              <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
+              <li><a href="menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="fila-1">
+          <a id="logoprin" href="Index.html">
+            <picture>
+              <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
+            </picture>
+          </a>
+          
+          <!--Bloque de enlaces de iconos -->
+          <div class="iconos-derecha">
+            <nav id="navUsuario">
+              <ul>
+                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
+              </ul>
+            </nav>
+            <nav id="navCarrito">
+              <ul>
+                <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span>Carrito(0)</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
+      <div id="vacio"></div>
+      <p id="anuncio"><a href="#">Envío gratuito para pedidos mayores a 50€</a></p>
     </header>
     <!-- menu -->
     <main id="menu-tramitacion">
@@ -74,7 +82,7 @@
               <input type="text" name="Nombre" id="nombre" required>
               <label for="apellidos">Apellidos*</label>
               <input type="text" name="Apellidos" id="apellidos" required>
-            <h4>Dirección de entrega</h4>   
+            <h4 class="titleDatos">Dirección de entrega</h4>   
               <label for="direccion">Dirección (calle y número)*</label>
               <input type="text" name="Dirección" id="direccion" required>
               <label for="codPostal">Código postal*</label>
@@ -88,14 +96,14 @@
               <label for="email">Correo electrónico*</label>
               <input type="email" name="Email" id="email" required>
             
-            <h4>Selecciona el método de pago</h4>
+            <h4 class="titleDatos">Selecciona el método de pago</h4>
               <div class="pago">
                 <input type="radio" name="tarjeta" id="tarjeta" value="tarjeta" >
                 <label for="tarjeta"> Pagar con tarjeta de débito/crédito <img src="../img/iconos_svg/IconoVisa.svg" alt="Visa" class="icono">&nbsp;<img src="../img/iconos_svg/IconMC.svg" alt="MasterCard" class="icono"></label><br>
                 <input type="radio" name="paypal" id="paypal" value="paypal" >
                 <label for="paypal"> PayPal <img src="../img/iconos_svg/IconoPaypal.svg" alt="PayPal" class="icono"></label>
               </div>
-            <h4>Crea tu cuenta</h4>
+            <h4 class="titleDatos">Crea tu cuenta</h4>
               <label for="password">Contraseña</label>
               <input type="password" placeholder="Escribe la contraseña que desees..." name="password" id="password">
             <p class="info">
@@ -108,7 +116,6 @@
           </form>
         </section>
     </main>
-    <!--Pie de pagina-->
     <footer>
       <nav id="menu-social">
         <a href="#" aria-label="Icono Whatsapp"><img src="../img/iconos_svg/IconWhatsapp.svg" alt="Icono Whatsapp"
@@ -170,7 +177,7 @@
           <small>&copy; 2025 MAMAEDITATUFIESTA</small>
       </div>
     </footer>
-  <!-- SCRIPT -->
+    <!-- SCRIPT -->
     <script src="../js/script.js"></script>
   </body>
 </html>

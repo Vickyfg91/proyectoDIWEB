@@ -185,6 +185,17 @@ $("span.error-newsletter").on("change", function() {
             para que el span se muestre cuando el mail esta*/     
     });
 });
+/*boton que camboa de ventana*/
+$(function() {
+  $("#btn-comprar").on("click", function() {
+    window.location.href = "tramitacion.html";
+  });
+});
+$(function() {
+  $("#btn-pagar").on("click", function() {
+    window.location.href = "pago.html";
+  });
+});
 /*JS PARA REPRODUCTOR DE VIDEO*/
 var video = document.getElementById('video');
 var barraTiempo = document.getElementById('barraTiempo');

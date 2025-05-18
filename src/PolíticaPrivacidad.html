@@ -26,52 +26,60 @@
     <header id="top">
       <div>
         <!-- Menú principal -->
-        <nav id="menu-principal">
-          <span><img id="abrirMenu" src="../img/iconos_svg/Iconomenu.svg" alt="Icono Menú Hamburguesa" title="Abrir Menú"></span>
-          <ul id="menu">
-            <li><a href="#"><img id="cerrarMenu" src="../img/iconos_svg/iconoCerrar.svg" alt="Icono Cerrar" title="Cerrar Menú"></a></li>
-            <li><a href="src/kitCumpleaños.html" class="item-menu">Kit Cumpleaños</a></li>
-            <li><a href="src/toppers.html" class="item-menu">Toppers</a></li>
-            <li><a href="src/personalizados.html" class="item-menu">Kit Personalizado</a></li>
-            <li><a href="src/sticker.html" class="item-menu">Sticker Personalizadas</a></li>
-            <li><a href="src/invitaciones.html" class="item-menu">Invitaciones</a></li>
-            <li><a href="src/menaje.html" class="item-menu">Decoración y Menaje</a></li>
-            <li><a href="src/SobreMi.html" class="item-menu">Sobre mí</a></li>
-          </ul>
-        </nav>
-        <a id="logoprin" href="../Index.html">
-          <picture>
-            <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
-          </picture>
-        </a>
-        
-        <!--Bloque de enlaces de iconos -->
-        <nav id="navUsuario">
-          <ul>
-            <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Usuario</span></a></li>
-          </ul>
-        </nav>
-        <nav id="navCarrito">
-          <ul>
-            <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span>Carrito</span></a></li>
-          </ul>
-        </nav>
+        <div class="fila-2">
+          <nav id="menu-principal">
+            <span><img id="abrirMenu" src="../img/iconos_svg/Iconomenu.svg" alt="Icono Menú Hamburguesa" title="Abrir Menú"></span>
+            <ul id="menu">
+              <li><a href="#"><img id="cerrarMenu" src="../img/iconos_svg/iconoCerrar.svg" alt="Icono Cerrar" title="Cerrar Menú"></a></li>
+              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="toppers.html" class="item-menu">Toppers</a></li>
+              <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
+              <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
+              <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
+              <li><a href="menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="fila-1">
+          <a id="logoprin" href="Index.html">
+            <picture>
+              <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
+            </picture>
+          </a>
+          
+          <!--Bloque de enlaces de iconos -->
+          <div class="iconos-derecha">
+            <nav id="navUsuario">
+              <ul>
+                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
+              </ul>
+            </nav>
+            <nav id="navCarrito">
+              <ul>
+                <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span>Carrito(0)</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
+      <div id="vacio"></div>
+      <p id="anuncio"><a href="#">Envío gratuito para pedidos mayores a 50€</a></p>
     </header>
     <!-- menu -->
     <main id="main-politicas">
       <nav class="migasPan" aria-label="Ruta de navegación">
-        <a href="../index.html">INICIO</a> /
-        <span class="migasPanSpan"aria-current="page">Política de Privacidad</span>
+        <a href="../Index.html">INICIO</a> /
+        <span class="migasPanSpan" aria-current="page">Política de Privacidad</span>
       </nav>
-      <section id="acceso"></section>
       <h1>Política de Privacidad</h1>
       <article class="recAzul">
+        <h2 class="titleVacio">Política de Privacidad</h2>
         <p>
           En MamaEditatuFiesta, nos comprometemos a proteger la privacidad de nuestros usuarios. Esta política de privacidad describe cómo recopilamos, usamos, almacenamos y protegemos tu información personal cuando visitas nuestro sitio web www.MAMAEDITATUFIESTA.es.
         </p>
-        <h2>Información que recopilamos</h2>
-          <p>
+        <section>
+          <h2 class="title-politicas">Información que recopilamos</h2>
             Recopilamos información personal que nos proporcionas voluntariamente al registrarte, suscribirte a nuestro boletín, contactar con nosotros o realizar una compra. Esta información puede incluir:
             <ul>
               <li>Nombre</li>
@@ -80,9 +88,9 @@
               <li>Dirección</li>
             </ul>
             También recopilamos información de navegación de forma automática, como tu dirección IP, tipo de navegador, páginas visitadas y tiempo de permanencia.
-          </p>
-        <h2>Uso de la información</h2>
-          <p>
+        </section>
+        <section>
+          <h2 class="title-politicas">Uso de la información</h2>
             Utilizamos la información que recopilamos para:
             <ul>
               <li>Proporcionar y gestionar nuestros servicios.</li>
@@ -91,22 +99,22 @@
               <li>Responder a tus consultas y comentarios.</li>
               <li>Realizar análisis y estudios de mercado.</li>
             </ul>
-          </p>
-        <h2>Base legal para el tratamiento de datos</h2>
-          <p>
+        </section>
+        <section>
+          <h2 class="title-politicas">Base legal para el tratamiento de datos</h2>
             La base legal para el tratamiento de tus datos personales se fundamenta en:
             <ul>
               <li>Tu consentimiento expreso al proporcionarnos tus datos.</li>
               <li>La necesidad de cumplir con un contrato.</li>
               <li>El interés legítimo de MamaEditatuFiesta en mejorar nuestros servicios.</li>
             </ul>
-          </p>
-        <h2>Conservación de datos</h2>
-          <p>
+        </section>
+        <section>
+            <h2 class="title-politicas">Conservación de datos</h2>
             Conservaremos tus datos personales mientras sea necesario para cumplir con los fines para los que fueron recopilados, así como para cumplir con nuestras obligaciones legales.
-          </p>
-        <h2>Derechos de los usuarios</h2>
-          <p>
+        </section>
+        <section>
+            <h2 class="title-politicas">Derechos de los usuarios</h2>
             Tienes derecho a:
             <ul>
               <li>Acceder a tus datos personales.</li>
@@ -116,19 +124,19 @@
               <li>Solicitar la portabilidad de tus datos.</li>
             </ul>
             Para ejercer estos derechos, puedes ponerte en contacto con nosotros a través de mamaeditatufiesta@gmail.com.
-          </p>
-        <h2>Seguridad de los datos</h2>
-          <p>
+        </section>
+        <section>
+          <h2 class="title-politicas">Seguridad de los datos</h2>
             Implementamos medidas de seguridad adecuadas para proteger tus datos personales contra accesos no autorizados, pérdida o alteración. Sin embargo, ten en cuenta que ningún método de transmisión por Internet o método de almacenamiento electrónico es 100% seguro.
-          </p>
-        <h2>Cambios en la política de privacidad</h2>
-          <p>
+        </section>
+        <section>
+          <h2 class="title-politicas">Cambios en la política de privacidad</h2>
             Implementamos medidas de seguridad adecuadas para proteger tus datos personales contra accesos no autorizados, pérdida o alteración. Sin embargo, ten en cuenta que ningún método de transmisión por Internet o método de almacenamiento electrónico es 100% seguro.
-          </p>
-        <h2>Contacto</h2>
-          <p>
+        </section>
+        <section>
+          <h2 class="title-politicas">Contacto</h2>
             Si tienes preguntas o inquietudes sobre nuestra política de privacidad, no dudes en contactarnos a través de mamaeditatufiesta@gmail.com.
-          </p>
+        </section>
     </article>
     </main>
   <!--Pie de pagina-->
