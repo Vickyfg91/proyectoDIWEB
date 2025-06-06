@@ -7,33 +7,32 @@ $(function () {
         console.log("menus");
     });
 
-    // Cerrar el menú
     $("img#cerrarMenu").on("click", function () {
         $("#menu").stop(true, true).slideToggle(300);
     });
 });
 $(function () {
     $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 0) { // Si la posición del scroll se mueve
+        if ($(this).scrollTop() > 0) {
             $('header').addClass('fijado');
             $('#anuncio').hide();
         } else {
-            $('header').removeClass('fijado'); //Lo quitamos
+            $('header').removeClass('fijado');
             $('#anuncio').show();
         }
     });
 });
 $(function () {
-    // Mostrar aviso de cookies siempre al cargar index
+    //Mostrar siempre al cargar index
     $('#fondo-opaco, #aviso-cookies').fadeIn();
 
-    // Aceptar cookies Cierra la ventana
+    //Aceptar cookies Cierra la ventana
     $('#aceptar-cookies').on('click', function () {
         localStorage.setItem('cookiesAceptadas', 'true');
         $('#fondo-opaco, #aviso-cookies').fadeOut();
     });
 
-    // Rechazar cookies Cierra la ventana
+    //Rechazar cookies Cierra la ventana
     $('#rechazar-cookies').on('click', function () {
         localStorage.setItem('cookiesAceptadas', 'false');
         $('#fondo-opaco, #aviso-cookies').fadeOut();
@@ -44,6 +43,7 @@ $(function () {
         $('#fondo-opaco, #aviso-cookies').fadeOut();
     });
 });
+
 //  Sumar productos en el carrtio
 $(function () {
     // Precio fijo por producto lo uso para poder hacer el simulacro
@@ -82,6 +82,20 @@ $(function () {
         actualizarTotales(valor);
     });
     actualizarTotales(parseInt($('.cantidad-input').val()));
+    $('.producto-cantidad').on('click', '.boton-eliminar', function () {
+        //eliminar el producto para simular la basura
+        $(this).closest('.producto-carrito').remove();
+
+        const cantidad = 0;
+        const precioProductos = 0;
+        const subtotal = 0;
+        const total = precioEnvio;
+
+        $('article.resumen-carrito .linea span:first-child').first().text(`Productos (${cantidad})`);
+        $('#precioProductos').text(formatearPrecio(precioProductos));
+        $('#precioSubtotal').text(formatearPrecio(subtotal));
+        $('#precioTotal').text(formatearPrecio(total));
+    });
 });
 
 //Slider index
@@ -203,13 +217,10 @@ $(function () {
 });
 
 $(function () {
-    // Expresiones regulares
     const regexNombre = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
     const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    // Función para mostrar mensajes sin borrar otros y sin mover layout
     function mostrarError($campo, mensaje) {
-        // Si ya existe este mismo mensaje, no lo volvemos a añadir
         let yaExiste = false;
         $campo.nextAll('.error-msg').each(function () {
             if ($(this).text() === mensaje) yaExiste = true;
@@ -219,14 +230,12 @@ $(function () {
         }
     }
 
-    // Función para eliminar mensaje concreto de error (si la condición ya no falla)
     function eliminarError($campo, mensaje) {
         $campo.nextAll('.error-msg').each(function () {
             if ($(this).text() === mensaje) $(this).remove();
         });
     }
 
-    // Validación genérica para required y longitud > 0
     $('input[required], textarea[required]').on('blur', function () {
         const $campo = $(this);
         const valor = $campo.val().trim();
@@ -349,7 +358,7 @@ $(function () {
         .on('mouseenter', function () {
             $(this).css({
                 "background-color": "#ffffff",
-                "color": "#9AE5F6"
+                "color": "var(--azul)"
             });
         })
         .on('mouseleave', function () {
@@ -368,7 +377,6 @@ $(function () {
             $(this).css({
                 "background-color": "#ffffff",
                 "color": "#9AE5F6",
-
             });
         })
         .on('mouseleave', function () {
@@ -380,20 +388,29 @@ $(function () {
         //notificacion banner añadido a carrito
         .on('click', function () {
             var $noti = $('div.notificacion');
+            var $boton = $(this);
+
             $noti.css({
                 display: 'block',
                 left: '100%'
-            })
-                .animate({ left: '50%' }, 1000);
+            }).animate({ left: '50%' }, 1000);
 
             setTimeout(function () {
                 $noti.animate({ left: '50%' }, 500, function () {
                     $noti.hide();
                 });
-            }, 5000)
-            //Actualiza contador del carrito
+            }, 5000);
+
+            // Actualiza el carrito
             contadorCarrito++;
-            $("#contador").text(`( ${contadorCarrito} )`);
+            setTimeout(function () {
+                $("#contador").text(`( ${contadorCarrito} )`);
+
+                $boton.css({
+                    "background-color": "var(--azul)",
+                    "color": "var(--blanco)"
+                });
+            }, 1000);
         });
 });
 
@@ -401,7 +418,7 @@ $(function () {
 $(function () {
     function animarAnuncio() {
         $('#anuncio a').css({ left: $('#anuncio').width() });
-        $('#anuncio a').animate({ left: '-100%' }, 80000, animarAnuncio).finish;
+        $('#anuncio a').animate({ left: '-50%' }, 30000, animarAnuncio).finish;
     }
     animarAnuncio();
     //parar con el raton
@@ -436,13 +453,7 @@ $(function () {
     });
 });
 
-$(function () {
-    $("span.error-newsletter").css('display', 'none');
-    $("span.error-newsletter").on("change", function () {
-        /*aqui hay que implementar una logica 
-        para que el span se muestre cuando el mail esta*/
-    });
-});
+
 /*boton que camboa de ventana*/
 $(function () {
     $("#btn-comprar").on("click", function () {
@@ -507,7 +518,7 @@ $(function () {
         } else {
             $('.subscrito-newsletter').show().finish();
             setTimeout(function () {
-            $('.subscrito-newsletter').hide();
+                $('.subscrito-newsletter').hide();
             }, 200);
         }
 

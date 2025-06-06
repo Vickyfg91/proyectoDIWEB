@@ -1,208 +1,255 @@
 <!DOCTYPE html>
 <html lang="es">
 
-  <head>
-    <title>MamaEditatuFiesta</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Victoria Fernández González" name="author">
-    <meta content="Sitio Web de la tienda Mama edita tu Fiesta" name="description">
-    <meta content="mamaeditatufiesta, fiestas, comuniones, cumpleaños, papeleriacreativa, papeleriapersonalizada" name="keywords">
+<head>
+  <title>MamaEditatuFiesta</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Victoria Fernández González" name="author">
+  <meta content="Sitio Web de la tienda Mama edita tu Fiesta" name="description">
+  <meta content="mamaeditatufiesta, fiestas, comuniones, cumpleaños, papeleriacreativa, papeleriapersonalizada" name="keywords">
 
-    <!--/* Tipo de letra Quicksand y Playball*/-->
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--/* Tipo de letra Quicksand y Playball*/-->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
 
 
-    <!--/*Ubicación estilos*/-->
-    <link rel="stylesheet" href="../css/estilosMEF.css">
-    <link rel="shortcut icon" href="../img/logoCirc.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <!--Scrip js jquery-->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-  </head>
-  <body>
-    <!--Cabecera de la página-->
-    <header id="top">
-      <div>
-        <!-- Menú principal -->
-        <div class="fila-2">
-          <nav id="menu-principal">
-            <span><img id="abrirMenu" src="../img/iconos_svg/Iconomenu.svg" alt="Icono Menú Hamburguesa" title="Abrir Menú"></span>
-            <ul id="menu">
-              <li><a href="#"><img id="cerrarMenu" src="../img/iconos_svg/iconoCerrar.svg" alt="Icono Cerrar" title="Cerrar Menú"></a></li>
-              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
-              <li><a href="toppers.html" class="item-menu">Toppers</a></li>
-              <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
-              <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
-              <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
-              <li><a href="menaje.html" class="item-menu">Menaje</a></li>
-              <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
+  <!--/*Ubicación estilos*/-->
+  <link rel="stylesheet" href="../css/estilosMEF.css">
+  <link rel="shortcut icon" href="../img/logoCirc.svg">
+
+  <!--Scrip js jquery-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+  <!--Cabecera de la página-->
+  <header id="top">
+    <div>
+      <!-- Menú principal -->
+      <div class="fila-2">
+        <nav id="menu-principal">
+          <span><img id="abrirMenu" src="../img/iconos_svg/Iconomenu.svg" alt="Icono Menú Hamburguesa"
+              aria-label="Abrir Menú"></span>
+          <ul id="menu">
+            <li><a href="#"><img id="cerrarMenu" src="../img/iconos_svg/iconoCerrar.svg" alt="Icono Cerrar"
+                  aria-label="Cerrar Menú"></a></li>
+            <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
+            <li><a href="toppers.html" class="item-menu">Toppers</a></li>
+            <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
+            <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
+            <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
+            <li><a href="menaje.html" class="item-menu">Menaje</a></li>
+            <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="fila-1">
+        <a id="logoprin" href="../Index.html">
+          <picture>
+            <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal"
+              aria-label="Ir a inicio">
+          </picture>
+        </a>
+
+        <!--Bloque de enlaces de iconos -->
+        <div class="iconos-derecha">
+          <nav id="navUsuario">
+            <ul>
+              <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img class="icono"
+                    src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" aria-label="Ir a Usuario"><span>Iniciar
+                    Sesión</span></a></li>
+            </ul>
+          </nav>
+          <nav id="navCarrito">
+            <ul>
+              <li><a href="carrito.html" aria-label="Ir a Carrito"><img class="icono"
+                    src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" aria-label="Ir a Carrito"><span
+                    id="txt">Carrito </span><span id="contador"></span></a></li>
             </ul>
           </nav>
         </div>
-        <div class="fila-1">
-          <a id="logoprin" href="../Index.html">
-            <picture>
-              <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
-            </picture>
+      </div>
+    </div>
+    <div id="vacio"></div>
+    <p id="anuncio"><a href="#">Envío gratuito para pedidos mayores a 50€</a></p>
+  </header>
+  <!-- menu -->
+  <main id="main-sobreMi">
+    <nav class="migasPan" aria-label="Ruta de navegación">
+      <a href="../index.html">INICIO</a> /
+      <span aria-current="page"> SOBRE MÍ</span>
+    </nav>
+    <h1>¿Quien hay detrás de MamaEditaTuFiesta?</h1>
+    <article id="sobremi">
+      <h2 id="sobreMi">Los inicios</h2>
+      <img src="../img/sobremi.webp" alt="Fotografia de la creadora de MamaEditaTuFiesta"
+        aria-label="Fotografia de la creadora de MamaEditaTuFiesta">
+
+      <section class="parrafos" id="introduccion">
+        <h3>Quien soy</h3>
+        <p><strong>MamaEditaTuFiesta</strong> nació en abril de 2018, tras organizar la fiesta de la primera Comunión de
+          mi sobrina mayor. Aunque la idea ya rondaba en mi mente desde mucho antes, ya que siempre me han apasionado
+          las manualidades y la organización de fiestas. En cada cumpleaños que organizaba, añadía mis pequeños toques y
+          detalles personales.</p>
+        <p>Mi objetivo era crear una fiesta familiar original, llena de cariño y detalles con mi estilo único, pero con
+          un toque de sofisticación, que pareciera haber sido diseñada por un profesional. Con la llegada de mi hija,
+          quise hacer de sus fiestas algo especial, pero a veces la organización resultaba más caótica de lo que
+          esperaba. Así, nació la idea de crear este espacio para hacer todo más armonioso y sencillo.</p>
+      </section>
+
+      <section class="parrafos" id="mision">
+        <h3>Nuestra Misión</h3>
+        <p>Soy desarrolladora web y una apasionada del diseño y el interiorismo. Por eso, creo que me encanta tanto la
+          idea de ayudar a otras personas a diseñar fiestas bonitas. Sin darme cuenta, me convertí en una <strong>Party
+            Planner</strong>. Diseñé y creé una fiesta llena de detalles hechos a mano, ya que no encontraba en las
+          tiendas españolas lo que tenía en mente. Pensé que a otras madres les ocurriría lo mismo, y de ahí surgió la
+          idea de crear este proyecto.</p>
+        <p>Así comenzó esta aventura, con mucho trabajo, cariño y dedicación, cuidando cada detalle con esmero.</p>
+      </section>
+
+      <section class="parrafos" id="nuestros-servicios">
+        <h3>¿Qué ofrecemos?</h3>
+        <p>Nos dedicamos a diseñar y producir fiestas únicas, y también ofrecemos servicios de asesoría y producción de
+          eventos, creando para ti una fiesta que tenga una personalidad propia, elegante y completamente a tu gusto.
+        </p>
+      </section>
+
+      <section class="parrafos" id="compromiso">
+        <h3>Compromiso con tu Fiesta</h3>
+        <p>En definitiva, te aseguramos que pondremos todo nuestro esfuerzo y cariño para que tú y tus seres queridos
+          disfruten de una fiesta única. Nos encargamos de todo, enviando todo lo necesario a tu casa para que solo
+          tengas que preocuparte de disfrutar al máximo de tu evento.</p>
+      </section>
+      <p>Sophia González</p>
+    </article>
+    <h3>Nuestro Video Promocional</h3>
+    <article id="reproductor">
+      <!-- DESCRIPCIÓN PARA ACCESIBILIDAD -->
+      <section aria-labelledby="descripcion-video" class="descripcion-accesibilidad">
+        <h4 id="descripcion-video">Descripción del contenido del vídeo</h4>
+        <p>
+          Este vídeo muestra una selección de productos personalizados para fiestas, como kits de cumpleaños, toppers,
+          invitaciones y menaje. Se observan escenas de mesas decoradas, niños disfrutando en eventos, y detalles de
+          papelería creativa con diseños coloridos. Aparece también la fundadora de MamaEditaTuFiesta explicando su
+          trabajo, con música alegre de fondo y textos animados sobreimpresos.
+        </p>
+      </section>
+      <h4>Video</h4>
+      <section aria-label="Reproductor" id="reproductorVideo">
+        <div id="contenedor">
+          <video id="video" preload="auto" tabindex="0" aria-label="Reproductor de video" class="video-promo">
+            <source src="../video/PromoMEF.mp4" type="video/mp4">
+            <source src="../video/PromoMEF.ogv" type="video/ogv">
+            <source src="../video/PromoMEF.webm" type="video/webm">
+          </video>
+        </div>
+        <div id="barra">
+          <span id="tiempoActual">0:00</span>
+          <input type="range" id="barraTiempo" value="0" max="100">
+          <span id="tiempoTotal">0:00</span>
+          <button id="restart" class="reproductor" aria-label="Botón Comenzar desde el inicio"><i
+              class="fa fa-redo"></i></button>
+          <button id="fullscreen" class="reproductor" aria-label="Botón Pantalla Completa"><i
+              class="fa fa-expand"></i></button>
+        </div>
+        <div id="botonera">
+          <button id="reproducir" class="reproductor" aria-label="Botón Play"><i id="btnPlay"
+              class="fas fa-play"></i></button>
+          <button id="parar" class="reproductor" aria-label="Botón Stop"><i class="fa fa-stop"></i></button>
+          <button id="atras" class="reproductor" aria-label="Botón Atrás"><i class="fa fa-backward"></i></button>
+          <button id="adelante" class="reproductor" aria-label="Botón Adelante"><i class="fa fa-forward"></i></button>
+          <span id="volumen">
+            <button id="mute" class="reproductor" aria-label="Botón Silenciar"><i id="btnMute"
+                class="fa fa-volume-up"></i></button>
+            <input type="range" id="volume" value="1" max="1" step="0.01">
+          </span>
+          <button id="lento" class="reproductor" aria-label="Botón Lento">
+            <img src="../img/iconos_svg/fluent-mdl2_rewind-point-five-x.svg" alt="Lento" class="fa fa-minus">
+          </button>
+          <button id="rapido" class="reproductor" aria-label="Botón Rápido">
+            <img src="../img/iconos_svg/fluent-mdl2_fast-forward-point-five-x.svg" alt="Rapido" class="fa fa-plus">
+          </button>
+        </div>
+      </section>
+    </article>
+  </main>
+  <!--Pie de pagina-->
+  <footer>
+    <nav id="menu-social">
+      <a href="#" aria-label="Icono Whatsapp"><img src="../img/iconos_svg/IconWhatsapp.svg" alt="Icono Whatsapp"
+          aria-label="Ir a nuestra cuenta de Whatsapp"><span>Whatsapp</span></a>
+      <a href="#" aria-label="Icono Instagram"><img src="../img/iconos_svg/IconInstagram.svg" alt="Icono Instagram"
+          aria-label="Ir a nuestra cuenta de Instagram"><span>Instagram</span></a>
+      <a href="#" aria-label="Icono Facebook"><img src="../img/iconos_svg/IconFacebook.svg" alt="Icono Facebook"
+          aria-label="Ir a nuestra cuenta de Facebook"><span>Facebook</span></a>
+      <a href="#" aria-label="Icono Pinterest"><img src="../img/iconos_svg/IconPinterest.svg" alt="Icono Pinterest"
+          aria-label="Ir a nuestra cuenta de Pinterest"><span>Pinterest</span></a>
+    </nav>
+    <div id="footer-central">
+      <div class="footer-form-newslet">
+        <form class="footer-form" action="/proceso-suscripcion" method="POST">
+          <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
+          <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
+          <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
+          <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
+          <span class="subscrito-newsletter">¡Te has suscrito correctamente!</span>
+          <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
+          <!--<img src="../img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
+        </form>
+      </div>
+      <div class="central-footer">
+        <h5 class="footer-contacto"><a href="contacto.html">¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</a></h5>
+        <nav class="menu-footer">
+          <ul id="lista-footer">
+            <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
+            <li><a href="toppers.html" class="item-menu">Toppers</a></li>
+            <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
+            <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
+            <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
+            <li><a href="menaje.html" class="item-menu">Menaje</a></li>
+            <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="logo-footer" id="info">
+        <div id="info-logo">
+          <a href="../Index.html">
+            <img class="logo-pq" src="../img/logoCirc.svg" alt="Logo MamaEditatuFiesta Secundario" aria-label="Ir a inicio">
           </a>
-          
-          <!--Bloque de enlaces de iconos -->
-          <div class="iconos-derecha">
-            <nav id="navUsuario">
-              <ul>
-                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img class="icono" src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
-              </ul>
-            </nav>
-            <nav id="navCarrito">
-              <ul>
-                <li><a href="carrito.html" aria-label="Ir a Carrito"><img class="icono" src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span id="txt">Carrito</span><span id="contador"> (0) </span></a></li>
-              </ul>
-            </nav>
-          </div>
+        </div>
+        <div id="info-tex">
+          <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconoLocalizacion.svg"
+              alt="Icono Localización" aria-label="Lugares de envio"> Envíos a Península y Baleares</span><br>
+          <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta"
+              aria-label=" Métodos de pago aceptados"> &nbsp; Métodos de pago
+            <img class="icono" src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa"
+              aria-label="Métodos de pago aceptados Visa">
+            <img class="icono" src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard"
+              aria-label="Métodos de pago aceptados MasterCard">
+            <img class="icono" src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal"
+              aria-label="Métodos de pago aceptados Paypal">
+          </span>
         </div>
       </div>
-      <div id="vacio"></div>
-      <p id="anuncio"><a href="#">Envío gratuito para pedidos mayores a 50€</a></p>
-    </header>
-    <!-- menu -->
-    <main id="main-sobreMi">
-      <nav class="migasPan" aria-label="Ruta de navegación">
-        <a href="../index.html">INICIO</a> /
-        <span aria-current="page"> SOBRE MÍ</span>
-      </nav>
-      <h1>¿Quien hay detrás de MamaEditaTuFiesta?</h1>
-      <article id="sobremi">
-        <h2 id="sobreMi">Los inicios</h2>
-        <img src="../img/sobremi.webp" alt="Fotografia de la creadora de MamaEditaTuFiesta" title="Fotografia de la creadora de MamaEditaTuFiesta">
-        
-        <section class="parrafos" id="introduccion">
-          <h3>Quien soy</h3>
-          <p><strong>MamaEditaTuFiesta</strong> nació en abril de 2018, tras organizar la fiesta de la primera Comunión de mi sobrina mayor. Aunque la idea ya rondaba en mi mente desde mucho antes, ya que siempre me han apasionado las manualidades y la organización de fiestas. En cada cumpleaños que organizaba, añadía mis pequeños toques y detalles personales.</p>
-          <p>Mi objetivo era crear una fiesta familiar original, llena de cariño y detalles con mi estilo único, pero con un toque de sofisticación, que pareciera haber sido diseñada por un profesional. Con la llegada de mi hija, quise hacer de sus fiestas algo especial, pero a veces la organización resultaba más caótica de lo que esperaba. Así, nació la idea de crear este espacio para hacer todo más armonioso y sencillo.</p>
-        </section>
+    </div>
+    <div id="politicas">
+      <a href="Politicas.html" aria-label="Visitar nuestra politica de Cookies">Política de Cookies</a>&nbsp; ·
+      &nbsp;<br>
+      <a href="AvisoLegal.html" aria-label="Visitar nuestro aviso legal">Aviso Legal</a> &nbsp; · &nbsp;
+      <a href="PolíticaPrivacidad.html" aria-label="Visitar nuestra politica de Privacidad"> Privacidad</a> &nbsp; ·
+      &nbsp;
+      <a href="Accesibilidadweb.html" aria-label="Visitar nuestra politica de Accesibilidad">Accesibilidad</a>
+      <small>&copy; 2025 MAMAEDITATUFIESTA</small>
+    </div>
+  </footer>
+  <!-- SCRIPT -->
+  <script src="../js/script.js"></script>
+</body>
 
-        <section class="parrafos" id="mision">
-            <h3>Nuestra Misión</h3>
-            <p>Soy desarrolladora web y una apasionada del diseño y el interiorismo. Por eso, creo que me encanta tanto la idea de ayudar a otras personas a diseñar fiestas bonitas. Sin darme cuenta, me convertí en una <strong>Party Planner</strong>. Diseñé y creé una fiesta llena de detalles hechos a mano, ya que no encontraba en las tiendas españolas lo que tenía en mente. Pensé que a otras madres les ocurriría lo mismo, y de ahí surgió la idea de crear este proyecto.</p>
-            <p>Así comenzó esta aventura, con mucho trabajo, cariño y dedicación, cuidando cada detalle con esmero.</p>
-        </section>
-
-        <section class="parrafos" id="nuestros-servicios">
-            <h3>¿Qué ofrecemos?</h3>
-            <p>Nos dedicamos a diseñar y producir fiestas únicas, y también ofrecemos servicios de asesoría y producción de eventos, creando para ti una fiesta que tenga una personalidad propia, elegante y completamente a tu gusto.</p>
-        </section>
-
-        <section class="parrafos" id="compromiso">
-            <h3>Compromiso con tu Fiesta</h3>
-            <p>En definitiva, te aseguramos que pondremos todo nuestro esfuerzo y cariño para que tú y tus seres queridos disfruten de una fiesta única. Nos encargamos de todo, enviando todo lo necesario a tu casa para que solo tengas que preocuparte de disfrutar al máximo de tu evento.</p>
-        </section>
-        <p>Sophia González</p>
-      </article>
-      <h3>Nuestro Video Promocional</h3>
-      <article id="reproductor">
-        <h4>Video</h4>
-          <section aria-label="Reproductor" id="reproductorVideo">
-            <div id="contenedor">
-              <video id="video" preload="auto" tabindex="0" aria-label="Reproductor de video" class="video-promo">
-                <source src="../video/PromoMEF.mp4" type="video/mp4">
-                <source src="../video/PromoMEF.ogv" type="video/ogv">
-                <source src="../video/PromoMEF.webm" type="video/webm">
-              </video>
-            </div>
-            <div id="barra">
-              <span id="tiempoActual">0:00</span>
-              <input type="range" id="barraTiempo" value="0" max="100">
-              <span id="tiempoTotal">0:00</span>
-              <button id="restart" class="reproductor" title="Botón Comenzar desde el inicio"><i class="fa fa-redo"></i></button>
-              <button id="fullscreen" class="reproductor" title="Botón Pantalla Completa"><i class="fa fa-expand"></i></button>
-            </div>
-            <div id="botonera">
-              <button id="reproducir" class="reproductor" title="Botón Play"><i id="btnPlay" class="fas fa-play"></i></button>
-              <button id="parar" class="reproductor" title="Botón Stop"><i class="fa fa-stop"></i></button>
-              <button id="atras" class="reproductor" title="Botón Atrás"><i class="fa fa-backward"></i></button>
-              <button id="adelante" class="reproductor" title="Botón Adelante"><i class="fa fa-forward"></i></button>
-              <span id="volumen">
-                <button id="mute" class="reproductor" title="Botón Silenciar"><i id="btnMute" class="fa fa-volume-up"></i></button>
-                <input type="range" id="volume" value="1" max="1" step="0.01">
-              </span>
-              <button id="lento" class="reproductor" title="Botón Lento">
-                <img src="../img/iconos_svg/fluent-mdl2_rewind-point-five-x.svg" alt="Lento" class="fa fa-minus">
-              </button>
-              <button id="rapido" class="reproductor" title="Botón Rápido">
-                <img src="../img/iconos_svg/fluent-mdl2_fast-forward-point-five-x.svg" alt="Rapido" class="fa fa-plus">
-              </button>
-            </div>
-          </section>
-      </article>
-    </main>
-    <!--Pie de pagina-->
-    <footer>
-      <nav id="menu-social">
-        <a href="#" aria-label="Icono Whatsapp"><img src="../img/iconos_svg/IconWhatsapp.svg" alt="Icono Whatsapp"
-            title="Ir a nuestra cuenta de Whatsapp"><span>Whatsapp</span></a>
-        <a href="#" aria-label="Icono Instagram"><img src="../img/iconos_svg/IconInstagram.svg" alt="Icono Instagram"
-            title="Ir a nuestra cuenta de Instagram"><span>Instagram</span></a>
-        <a href="#" aria-label="Icono Facebook"><img src="../img/iconos_svg/IconFacebook.svg" alt="Icono Facebook"
-            title="Ir a nuestra cuenta de Facebook"><span>Facebook</span></a>
-        <a href="#" aria-label="Icono Pinterest"><img src="../img/iconos_svg/IconPinterest.svg" alt="Icono Pinterest"
-            title="Ir a nuestra cuenta de Pinterest"><span>Pinterest</span></a>
-      </nav>
-      <div id="footer-central">
-        <div class="footer-form-newslet">
-          <form class="footer-form" action="/proceso-suscripcion" method="POST">
-            <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
-            <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
-            <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
-            <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
-            <span class="subscrito-newsletter">¡Te has suscrito correctamente!</span>
-            <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
-            <!--<img src="../img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
-          </form>
-        </div>
-        <div class="central-footer">
-          <h5 class="footer-contacto"><a href="contacto.html">¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</a></h5>
-          <nav class="menu-footer">
-            <ul id="lista-footer">
-              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
-              <li><a href="toppers.html" class="item-menu">Toppers</a></li>
-              <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
-              <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
-              <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
-              <li><a href="menaje.html" class="item-menu">Menaje</a></li>
-              <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
-            </ul>
-          </nav>
-        </div>
-  
-        <div class="logo-footer" id="info">
-          <div id="info-logo">
-            <a href="../Index.html">
-              <img class="logo-pq" src="../img/logoCirc.svg" alt="Logo MamaEditatuFiesta Secundario" title="Ir a inicio">
-            </a>
-          </div>
-          <div id="info-tex">
-            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"> Envíos a Península y Baleares</span><br>
-            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"> &nbsp; Métodos de pago
-              <img class="icono" src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa">
-              <img class="icono" src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard">
-              <img class="icono" src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal">
-            </span>
-          </div>
-        </div>
-      </div>
-      <div id="politicas">
-          <a href="Politicas.html" aria-label="Visitar nuestra politica de Cookies">Política de Cookies</a>&nbsp; · &nbsp;<br>
-          <a href="AvisoLegal.html" aria-label="Visitar nuestro aviso legal">Aviso Legal</a> &nbsp; · &nbsp;
-          <a href="PolíticaPrivacidad.html" aria-label="Visitar nuestra politica de Privacidad"> Privacidad</a> &nbsp; · &nbsp;
-          <a href="Accesibilidadweb.html" aria-label="Visitar nuestra politica de Accesibilidad">Accesibilidad</a>
-          <small>&copy; 2025 MAMAEDITATUFIESTA</small>
-      </div>
-    </footer>
-    <!-- SCRIPT -->
-    <script src="../js/script.js"></script>
-  </body>
 </html>

@@ -137,6 +137,16 @@ h4#titleTotal {
 h4.titleDatos {
   margin: 0.25rem auto;
 }
+/*Clase para video lectores de pantalla*/
+.descripcion-accesibilidad {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 /*Formularios*/
 .formulario {
@@ -223,6 +233,9 @@ header#top>div {
   gap: .5rem;
   margin-right: .5rem;
 }
+img#abrirMenu{
+  margin-left: 1rem;
+}
 .icono{
 vertical-align: middle;
 }
@@ -266,6 +279,10 @@ header#top>p#anuncio {
   margin: 0;
   padding: 0.5rem;
   
+}
+header#top > p#anuncio {
+  overflow-x: hidden;
+  position: relative;
 }
 
 header#top>p#anuncio>a {
@@ -569,10 +586,38 @@ main#main-sobreMi>article#reproductor>section#reproductorVideo>div#barra>input[t
   max-width: 18rem;
   width: 100%;
 }
+.btn-azul {
+  background-color: var(--azul);
+  border: 2px solid var(--azul);
+  border-radius: .5rem;
+  color: var(--blanco);
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+}
+.archivos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: .8rem;
+  color: var(--azul);
+  width: 100%;
+  padding: .5rem 0rem;
+  margin-top: 0.5rem;
+}
+.archivos > label{
+  padding: .5rem 1.1rem;
+}
+.subirArchivo{
+  display: none;
+}
+
 div.notificacion{
   display: none;
   position: fixed;
-  top: 5rem;
+  top: 15rem;
   background-color: #dff0d8;
   color: #3c763d;
   padding: 1rem 1.25rem;
@@ -855,18 +900,16 @@ main#contacto>section#sec-contacto>p {
 /*Carrito*/
 .contenedor-carrito {
   max-width: 56rem;
-  min-width: 28rem;
-  margin: 1rem auto;
-  padding: 1rem;
+  padding: 0 1rem;
 
 }
 
 .producto-carrito {
+  display: flex;
   background-color: var(--blanco);
   border: 2px solid var(--azul);
   border-radius: 0.75rem;
   padding: 1rem;
-  display: flex;
   align-items: flex-start;
   gap: 1rem;
   margin: 1.5rem;
@@ -1176,19 +1219,17 @@ main#menu-kitCumple > section > p{
   margin-top: 1rem;
   margin-left: 0.65rem;
   margin-right: 0.65rem;
-  
 }
 
 .carta-productos {
   display: flex;
   flex-flow: column;
-  flex-basis: 47%;
+  flex-basis: 50%;
   padding: .75rem;
   border: 1px solid var(--azul);
   box-sizing: border-box;
-  max-width: 19rem;
-  border-radius: 0.5rem;
-  
+  max-width: 10.7rem;
+  border-radius: 0.5rem;  
 }
 
 .product-item {
@@ -1343,7 +1384,7 @@ footer>div#footer-central>div.footer-form-newslet>form>button#btn-subscrib {
   color: var(--blanco);
   font-size: 1rem;
   border-radius: .5rem;
-  width: 50%;
+  width: 30%;
   height: 2.5rem;
 }
 
@@ -1612,6 +1653,7 @@ div#politicas>small {
   .carta-productos {
     margin-bottom: 1.25rem;
     flex-basis: 32%;
+    max-width: 20rem;
   }
 
   #menu-kitCumple>section>article>ul>li {
