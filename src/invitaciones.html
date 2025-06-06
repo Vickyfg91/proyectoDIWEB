@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>MamaEditatuFiesta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Victoria Fernández González" name="author">
+    <meta content="Sitio Web de la tienda Mama edita tu Fiesta" name="description">
+    <meta content="mamaeditatufiesta, fiestas, comuniones, cumpleaños, papeleriacreativa, papeleriapersonalizada"
+        name="keywords">
+
+    <!--/* Tipo de letra Quicksand y Playball*/-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+    <!--/*Ubicación estilos*/-->
+    <link rel="stylesheet" href="../css/estilosMEF.css">
+    <link rel="shortcut icon" href="../img/logoCirc.svg">
+
+    <!--Scrip js jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <!--Cabecera de la página-->
+    <header id="top">
+      <div>
+        <!-- Menú principal -->
+        <div class="fila-2">
+          <nav id="menu-principal">
+            <span><img id="abrirMenu" src="../img/iconos_svg/Iconomenu.svg" alt="Icono Menú Hamburguesa" title="Abrir Menú"></span>
+            <ul id="menu">
+              <li><a href="#"><img id="cerrarMenu" src="../img/iconos_svg/iconoCerrar.svg" alt="Icono Cerrar" title="Cerrar Menú"></a></li>
+              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="toppers.html" class="item-menu">Toppers</a></li>
+              <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
+              <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
+              <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
+              <li><a href="menaje.html" class="item-menu">Menaje</a></li>
+              <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="fila-1">
+          <a id="logoprin" href="../Index.html">
+            <picture>
+              <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
+            </picture>
+          </a>
+          
+          <!--Bloque de enlaces de iconos -->
+          <div class="iconos-derecha">
+            <nav id="navUsuario">
+              <ul>
+                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img class="icono" src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
+              </ul>
+            </nav>
+            <nav id="navCarrito">
+              <ul>
+                <li><a href="carrito.html" aria-label="Ir a Carrito"><img class="icono" src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span id="txt">Carrito</span><span id="contador"> (0) </span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div id="vacio"></div>
+      <p id="anuncio"><a href="#">Envío gratuito para pedidos mayores a 50€</a></p>
+    </header>
+    <!-- menu -->
+    <main id="menu-kitCumple">
+        <nav class="migasPan" aria-label="Ruta de navegación">
+            <a href="../index.html">INICIO</a> /
+            <span class="migasPanSpan" aria-current="page"> Sticker Personalizadas </span>
+        </nav>
+        <!-- TÍTULO -->
+        <h1>Sticker Personalizadas</h1>
+        <!-- FILTROS -->
+        <div class="filtro">
+            <span>Mostrando los 28 resultados</span>
+            <select class="order">
+                <option>Ordenar por</option>
+                <option>Precio: menor a mayor</option>
+                <option>Precio: mayor a menor</option>
+                <option>Nombre: A-Z</option>
+            </select>
+        </div>
+
+      <!-- LISTA DE PRODUCTOS -->
+      <div class="notificacion">Artículo añadido al carrito correctamente</div>
+        <section class="lista-product">
+            <h2>Articulos</h2>
+            <p>
+                Elige la temática que más te guste, rellena los datos, y te enviaremos el archivo en formato PNG para
+                que puedas enviarlo a tus invitados o imprimirlo en estilo vintage.
+            </p>
+            <article class="carta-productos">
+                <img src="../img/archWeb/Invitaciones/1.webp" title="Invitación personalizada Sirena"
+                    alt="Invitación personalizada Sirena" class="product-img-vertical ">
+                <h2 class="titleProductos">Invitaciones Sirena</h2>
+                <form action="/generar-invitacion" method="post" class="formulario-item">
+                    <label for="nombreInvitacionSirena">Nombre:</label>
+                    <input type="text" name="nombreInvitacionSirena" id="nombreInvitacionSirena" class="input-azul"
+                        required>
+
+                    <label for="edadInvitacionSirena">Edad:</label>
+                    <input type="text" name="edadInvitacionSirena" id="edadInvitacionSirena" class="input-azul">
+
+                    <label for="fechaInvitacionSirena">Fecha:</label>
+                    <input type="date" name="fechaInvitacionSirena" id="fechaInvitacionSirena" class="input-azul">
+
+                    <label for="horaInvitacionSirena">Hora:</label>
+                    <input type="time" name="horaInvitacionSirena" id="horaInvitacionSirena" class="input-azul">
+
+                    <label for="lugarInvitacionSirena">Lugar:</label>
+                    <input type="text" name="lugarInvitacionSirena" id="lugarInvitacionSirena" class="input-azul">
+
+                    <label for="confirmacionInvitacionSirena">Confirmación:</label>
+                    <input type="text" name="confirmacionInvitacionSirena" id="confirmacionInvitacionSirena"
+                        class="input-azul">
+                </form>
+
+                <div class="precio-producto">
+                    <span class="precio">00,00€</span>
+                    <button class="btn-azulPq">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="carta-productos">
+                <img src="../img/archWeb/Invitaciones/2.webp" title="Invitación personalizada Arcoíris"
+                    alt="Invitación personalizada Arcoíris" class="product-img-vertical">
+                <h2 class="titleProductos">Invitaciones Arcoíris</h2>
+                <form action="/generar-invitacion" method="post" class="formulario-item">
+                    <label for="nombreInvitacionArcoiris">Nombre:</label>
+                    <input type="text" name="nombreInvitacionArcoiris" id="nombreInvitacionArcoiris" class="input-azul"
+                        required>
+
+                    <label for="edadInvitacionArcoiris">Edad:</label>
+                    <input type="text" name="edadInvitacionArcoiris" id="edadInvitacionArcoiris" class="input-azul">
+
+                    <label for="fechaInvitacionArcoiris">Fecha:</label>
+                    <input type="date" name="fechaInvitacionArcoiris" id="fechaInvitacionArcoiris" class="input-azul">
+
+                    <label for="horaInvitacionArcoiris">Hora:</label>
+                    <input type="time" name="horaInvitacionArcoiris" id="horaInvitacionArcoiris" class="input-azul">
+
+                    <label for="lugarInvitacionArcoiris">Lugar:</label>
+                    <input type="text" name="lugarInvitacionArcoiris" id="lugarInvitacionArcoiris" class="input-azul">
+
+                    <label for="confirmacionInvitacionArcoiris">Confirmación:</label>
+                    <input type="text" name="confirmacionInvitacionArcoiris" id="confirmacionInvitacionArcoiris"
+                        class="input-azul">
+                </form>
+
+                <div class="precio-producto">
+                    <span class="precio">00,00€</span>
+                    <button class="btn-azulPq">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="carta-productos">
+                <img src="../img/archWeb/Invitaciones/4.webp" title="Invitación personalizada Unicornio"
+                    alt="Invitación personalizada Unicornio" class="product-img-vertical">
+                <h2 class="titleProductos">Invitaciones Unicornio</h2>
+                <form action="/generar-invitacion" method="post" class="formulario-item">
+                    <label for="nombreInvitacionUnicornio">Nombre:</label>
+                    <input type="text" name="nombreInvitacionUnicornio" id="nombreInvitacionUnicornio"
+                        class="input-azul" required>
+
+                    <label for="edadInvitacionUnicornio">Edad:</label>
+                    <input type="text" name="edadInvitacionUnicornio" id="edadInvitacionUnicornio" class="input-azul">
+
+                    <label for="fechaInvitacionUnicornio">Fecha:</label>
+                    <input type="date" name="fechaInvitacionUnicornio" id="fechaInvitacionUnicornio" class="input-azul">
+
+                    <label for="horaInvitacionUnicornio">Hora:</label>
+                    <input type="time" name="horaInvitacionUnicornio" id="horaInvitacionUnicornio" class="input-azul">
+
+                    <label for="lugarInvitacionUnicornio">Lugar:</label>
+                    <input type="text" name="lugarInvitacionUnicornio" id="lugarInvitacionUnicornio" class="input-azul">
+
+                    <label for="confirmacionInvitacionUnicornio">Confirmación:</label>
+                    <input type="text" name="confirmacionInvitacionUnicornio" id="confirmacionInvitacionUnicornio"
+                        class="input-azul">
+                </form>
+
+                <div class="precio-producto">
+                    <span class="precio">00,00€</span>
+                    <button class="btn-azulPq">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <article class="carta-productos">
+                <img src="../img/archWeb/Invitaciones/5.webp" title="Invitación personalizada Pink"
+                    alt="Invitación personalizada Pink" class="product-img-vertical">
+                <h2 class="titleProductos">Invitaciones Pink</h2>
+                <form action="/generar-invitacion" method="post" class="formulario-item">
+                    <label for="nombreInvitacionPink">Nombre:</label>
+                    <input type="text" name="nombreInvitacionPink" id="nombreInvitacionPink" class="input-azul"
+                        required>
+
+                    <label for="edadInvitacionPink">Edad:</label>
+                    <input type="text" name="edadInvitacionPink" id="edadInvitacionPink" class="input-azul">
+
+                    <label for="fechaInvitacionPink">Fecha:</label>
+                    <input type="date" name="fechaInvitacionPink" id="fechaInvitacionPink" class="input-azul">
+
+                    <label for="horaInvitacionPink">Hora:</label>
+                    <input type="time" name="horaInvitacionPink" id="horaInvitacionPink" class="input-azul">
+
+                    <label for="lugarInvitacionPink">Lugar:</label>
+                    <input type="text" name="lugarInvitacionPink" id="lugarInvitacionPink" class="input-azul">
+
+                    <label for="confirmacionInvitacionPink">Confirmación:</label>
+                    <input type="text" name="confirmacionInvitacionPink" id="confirmacionInvitacionPink"
+                        class="input-azul">
+                </form>
+
+                <div class="precio-producto">
+                    <span class="precio">00,00€</span>
+                    <button class="btn-azulPq">Añadir al carrito</button>
+                </div>
+            </article>
+
+        </section>
+    </main>
+    <!--Pie de pagina-->
+    <footer>
+      <nav id="menu-social">
+        <a href="#" aria-label="Icono Whatsapp"><img src="../img/iconos_svg/IconWhatsapp.svg" alt="Icono Whatsapp"
+            title="Ir a nuestra cuenta de Whatsapp"><span>Whatsapp</span></a>
+        <a href="#" aria-label="Icono Instagram"><img src="../img/iconos_svg/IconInstagram.svg" alt="Icono Instagram"
+            title="Ir a nuestra cuenta de Instagram"><span>Instagram</span></a>
+        <a href="#" aria-label="Icono Facebook"><img src="../img/iconos_svg/IconFacebook.svg" alt="Icono Facebook"
+            title="Ir a nuestra cuenta de Facebook"><span>Facebook</span></a>
+        <a href="#" aria-label="Icono Pinterest"><img src="../img/iconos_svg/IconPinterest.svg" alt="Icono Pinterest"
+            title="Ir a nuestra cuenta de Pinterest"><span>Pinterest</span></a>
+      </nav>
+      <div id="footer-central">
+        <div class="footer-form-newslet">
+          <form class="footer-form" action="/proceso-suscripcion" method="POST">
+            <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
+            <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
+            <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
+            <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
+            <span class="subscrito-newsletter">¡Te has suscrito correctamente!</span>
+            <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
+            <!--<img src="../img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
+          </form>
+        </div>
+        <div class="central-footer">
+          <h5 class="footer-contacto"><a href="contacto.html">¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</a></h5>
+          <nav class="menu-footer">
+            <ul id="lista-footer">
+              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="toppers.html" class="item-menu">Toppers</a></li>
+              <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
+              <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
+              <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
+              <li><a href="menaje.html" class="item-menu">Menaje</a></li>
+              <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
+            </ul>
+          </nav>
+        </div>
+  
+        <div class="logo-footer" id="info">
+          <div id="info-logo">
+            <a href="../Index.html">
+              <img class="logo-pq" src="../img/logoCirc.svg" alt="Logo MamaEditatuFiesta Secundario" title="Ir a inicio">
+            </a>
+          </div>
+          <div id="info-tex">
+            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"> Envíos a Península y Baleares</span><br>
+            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"> &nbsp; Métodos de pago
+              <img class="icono" src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa">
+              <img class="icono" src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard">
+              <img class="icono" src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal">
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="politicas">
+          <a href="Politicas.html" aria-label="Visitar nuestra politica de Cookies">Política de Cookies</a>&nbsp; · &nbsp;<br>
+          <a href="AvisoLegal.html" aria-label="Visitar nuestro aviso legal">Aviso Legal</a> &nbsp; · &nbsp;
+          <a href="PolíticaPrivacidad.html" aria-label="Visitar nuestra politica de Privacidad"> Privacidad</a> &nbsp; · &nbsp;
+          <a href="Accesibilidadweb.html" aria-label="Visitar nuestra politica de Accesibilidad">Accesibilidad</a>
+          <small>&copy; 2025 MAMAEDITATUFIESTA</small>
+      </div>
+    </footer>
+    <!-- SCRIPT -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>

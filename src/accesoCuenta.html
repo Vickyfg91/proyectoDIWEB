@@ -36,13 +36,13 @@
               <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
               <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
               <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
-              <li><a href="menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="menaje.html" class="item-menu">Menaje</a></li>
               <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
             </ul>
           </nav>
         </div>
         <div class="fila-1">
-          <a id="logoprin" href="Index.html">
+          <a id="logoprin" href="../Index.html">
             <picture>
               <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
             </picture>
@@ -57,7 +57,7 @@
             </nav>
             <nav id="navCarrito">
               <ul>
-                <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span>Carrito(0)</span></a></li>
+                <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span id="txt">Carrito</span><span id="contador"> (0) </span></a></li>
               </ul>
             </nav>
           </div>
@@ -78,7 +78,7 @@
           <label for="emailacceso"></label>
           <input type="email" name="emailacceso" id="emailacceso" placeholder="Correo Electrónico" required>
           <input type="password" name="passwordacceso" id="passwordacceso" placeholder="Contraseña" required>
-          <div id="recordatorio"><a href="#" aria-label="Ir a Recordatorio de Contraseña">¿Has olvidado tu contraseña?</a></div>
+          <div id="recordatorio"><a href="recuperarCuenta.html" aria-label="Ir a Recordatorio de Contraseña">¿Has olvidado tu contraseña?</a></div>
           <button type="submit" id="btn-sesion" class="btn-rosa">Iniciar Sesión</button>
           <p class="centrado">¿Aún no te has registrado?<a class="subrayada" href="crearCuenta.html" aria-label="Ir a Registro"> Crea tu cuenta</a></p>
           
@@ -104,6 +104,7 @@
             <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
             <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
             <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
+            <span class="subscrito-newsletter">¡Te has suscrito correctamente!</span>
             <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
             <!--<img src="../img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
           </form>
@@ -112,12 +113,12 @@
           <h5 class="footer-contacto"><a href="contacto.html">¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</a></h5>
           <nav class="menu-footer">
             <ul id="lista-footer">
-              <li><a href="kitCumpleaños.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
               <li><a href="toppers.html" class="item-menu">Toppers</a></li>
               <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
               <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
               <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
-              <li><a href="menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="menaje.html" class="item-menu">Menaje</a></li>
               <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
             </ul>
           </nav>
@@ -130,11 +131,11 @@
             </a>
           </div>
           <div id="info-tex">
-            <span class="info-footer"><img src="../img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"> Envíos a Península y Baleares</span><br>
-            <span class="info-footer"><img src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"> &nbsp; Métodos de pago
-              <img src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa">
-              <img src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard">
-              <img src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal">
+            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"> Envíos a Península y Baleares</span><br>
+            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"> &nbsp; Métodos de pago
+              <img class="icono" src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa">
+              <img class="icono" src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard">
+              <img class="icono" src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal">
             </span>
           </div>
         </div>
@@ -147,7 +148,7 @@
           <small>&copy; 2025 MAMAEDITATUFIESTA</small>
       </div>
     </footer>
-  <!-- SCRIPT -->
+    <!-- SCRIPT -->
     <script src="../js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <title>MamaEditatuFiesta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Victoria Fernández González" name="author">
+    <meta content="Sitio Web de la tienda Mama edita tu Fiesta" name="description">
+    <meta content="mamaeditatufiesta, fiestas, comuniones, cumpleaños, papeleriacreativa, papeleriapersonalizada" name="keywords">
+
+    <!--/* Tipo de letra Quicksand y Playball*/-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+    <!--/*Ubicación estilos*/-->
+    <link rel="stylesheet" href="../css/estilosMEF.css">
+    <link rel="shortcut icon" href="../img/logoCirc.svg">
+
+    <!--Scrip js jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  </head>
+  <body>
+    <!--Cabecera de la página-->
+    <header id="top">
+      <div>
+        <!-- Menú principal -->
+        <div class="fila-2">
+          <nav id="menu-principal">
+            <span><img id="abrirMenu" src="../img/iconos_svg/Iconomenu.svg" alt="Icono Menú Hamburguesa" title="Abrir Menú"></span>
+            <ul id="menu">
+              <li><a href="#"><img id="cerrarMenu" src="../img/iconos_svg/iconoCerrar.svg" alt="Icono Cerrar" title="Cerrar Menú"></a></li>
+              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="toppers.html" class="item-menu">Toppers</a></li>
+              <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
+              <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
+              <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
+              <li><a href="menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="fila-1">
+          <a id="logoprin" href="../Index.html">
+            <picture>
+              <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
+            </picture>
+          </a>
+          
+          <!--Bloque de enlaces de iconos -->
+          <div class="iconos-derecha">
+            <nav id="navUsuario">
+              <ul>
+                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
+              </ul>
+            </nav>
+            <nav id="navCarrito">
+              <ul>
+                <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span id="txt">Carrito</span><span id="contador"> (0) </span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div id="vacio"></div>
+      <p id="anuncio"><a href="#">Envío gratuito para pedidos mayores a 50€</a></p>
+    </header>
+    <!-- menu -->
+    <main id="menu-kitCumple">
+        <nav class="migasPan" aria-label="Ruta de navegación">
+          <a href="../index.html">INICIO</a> /
+          <span class="migasPanSpan" aria-current="page"> Kit personalizados </span>
+        </nav>
+            <!-- TÍTULO -->
+        <h1>Kit Personalizados</h1>
+  <!-- FILTROS -->
+          <div class="filtro">
+            <span>Mostrando los 28 resultados</span>
+            <select class="order">
+                <option>Ordenar por</option>
+                <option>Precio: menor a mayor</option>
+                <option>Precio: mayor a menor</option>
+                <option>Nombre: A-Z</option>
+            </select>
+          </div>
+
+  <!-- LISTA DE PRODUCTOS -->
+   <div class="notificacion">Artículo añadido al carrito correctamente</div>
+      <section class="lista-product">
+        <h2>Articulos</h2>
+        <p>
+            Todos nuestros kits incluyen invitación digital, una guirnalda con el mensaje 'Feliz Cumpleaños', 50 globos, decoración personalizada (elemento con el nombre y la edad, niña/niño, 25 elementos decorativos diversos, banderas), y la cantidad de vasos, platos, cubiertos (cucharas y cuchillos), pajitas, servilletas y bolsitas para gominolas se distribuyen según el número de invitados seleccionados. Además, incluye un topper de tarta sencillo.
+        </p>
+        <article class="carta-productos">
+            <img src="../img/archWeb/kit_personalizables/kit_dinosaurio_03.webp" title="Pack Cumpleaños personalizado Dinosaurio" alt="Pack Cumpleaños personalizado Dinosaurio" class="product-img">
+                <h2 class="titleProductos">Temática Dinosaurio</h2>
+                <label for="nombrePackDino">Nombre: </label>
+                <input type="text" name="nombrePackDino" id="nombrePackDino" class="input-azul" required>
+                <label for="edadPackDino">Edad:</label>
+                <input type="text" name="edadPackDino" id="edadPackDino" class="input-azul">
+                <label for="cantidadInvPackDino">Cantidad de invitados:</label>
+                <select class="cant-invt" id="cantidadInvPackDino">
+                    <option>10 Invitados</option>
+                    <option>15 Invitados</option>
+                    <option>20 Invitados</option>
+                    <option>25 Invitados</option>
+                </select>
+            <div class="color-select">
+                <span>Selecciona el color:</span>
+                <div class="vista-colores">
+                  <img src="../img/archWeb/ColoresPack/Ellipse1.webp" alt="Color Rosa melocotón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse2.webp" alt="Color Rosa salmón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse3.webp" alt="Color Verde menta">
+                  <img src="../img/archWeb/ColoresPack/Ellipse4.webp" alt="Color Amarillo mantequilla">
+                  <img src="../img/archWeb/ColoresPack/Ellipse5.webp" alt="Color Melocotón claro">
+                  <img src="../img/archWeb/ColoresPack/Ellipse6.webp" alt="Color Azul cielo">
+                  <img src="../img/archWeb/ColoresPack/Ellipse7.webp" alt="Color Rosa chicle ">
+                  <img src="../img/archWeb/ColoresPack/Ellipse8.webp" alt="Color Lavanda">
+                  <img src="../img/archWeb/ColoresPack/Ellipse9.webp" alt="Color Verde aqua">
+                  <img src="../img/archWeb/ColoresPack/Ellipse10.webp" alt="Color Azul océano">
+                </div>
+            </div>
+            <div class="precio-producto">
+                <span class="precio">00,00€</span>
+                <button class="btn-azulPq" >Añadir al carrito</button>
+            </div>
+        </article>
+        <article class="carta-productos">
+            <img src="../img/archWeb/kit_personalizables/kit_unicornio_01.webp" title="Pack Cumpleaños personalizado Unicornio" alt="Pack Cumpleaños personalizado Unicornio" class="product-img">
+                <h2 class="titleProductos">Temática Unicornio</h2>
+                <label for="nombrePackUnic">Nombre: </label>
+                <input type="text" name="nombrePackUnic" id="nombrePackUnic" class="input-azul" required>
+                <label for="edadPackUnic">Edad:</label>
+                <input type="text" name="edadPackUnic" id="edadPackUnic" class="input-azul">
+                <label for="cantidadInvPackUnic">Cantidad de invitados:</label>
+                <select class="cant-invt" id="cantidadInvPackUnic">
+                    <option>10 Invitados</option>
+                    <option>15 Invitados</option>
+                    <option>20 Invitados</option>
+                    <option>25 Invitados</option>
+                </select>
+                <div class="color-select">
+                <span>Selecciona el color:</span>
+                <div class="vista-colores">
+                  <img src="../img/archWeb/ColoresPack/Ellipse1.webp" alt="Color Rosa melocotón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse2.webp" alt="Color Rosa salmón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse3.webp" alt="Color Verde menta">
+                  <img src="../img/archWeb/ColoresPack/Ellipse4.webp" alt="Color Amarillo mantequilla">
+                  <img src="../img/archWeb/ColoresPack/Ellipse5.webp" alt="Color Melocotón claro">
+                  <img src="../img/archWeb/ColoresPack/Ellipse6.webp" alt="Color Azul cielo">
+                  <img src="../img/archWeb/ColoresPack/Ellipse7.webp" alt="Color Rosa chicle ">
+                  <img src="../img/archWeb/ColoresPack/Ellipse8.webp" alt="Color Lavanda">
+                  <img src="../img/archWeb/ColoresPack/Ellipse9.webp" alt="Color Verde aqua">
+                  <img src="../img/archWeb/ColoresPack/Ellipse10.webp" alt="Color Azul océano">
+                </div>
+              </div>
+                <div class="precio-producto">
+                    <span class="precio">00,00€</span>
+                    <button class="btn-azulPq" >Añadir al carrito</button>
+                </div>
+        </article>
+        <article class="carta-productos">
+            <img src="../img/archWeb/kit_personalizables/kit_circo_01.webp" title="Pack Cumpleaños personalizado Circo" alt="Pack Cumpleaños personalizado Circo" class="product-img">
+                <h2 class="titleProductos">Temática Circo</h2>
+                <label for="nombrePackCirco">Nombre: </label>
+                <input type="text" name="nombrePackCirco" id="nombrePackCirco" class="input-azul" required>
+                <label for="edadPackCirco">Edad:</label>
+                <input type="text" name="edadPackCirco" id="edadPackCirco" class="input-azul">
+                <label for="cantidadInvPackCirco">Cantidad de invitados:</label>
+                <select class="cant-invt" id="cantidadInvPackCirco">
+                    <option>10 Invitados</option>
+                    <option>15 Invitados</option>
+                    <option>20 Invitados</option>
+                    <option>25 Invitados</option>
+                </select>
+
+                <div class="color-select">
+                <span>Selecciona el color:</span>
+                <div class="vista-colores">
+                  <img src="../img/archWeb/ColoresPack/Ellipse1.webp" alt="Color Rosa melocotón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse2.webp" alt="Color Rosa salmón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse3.webp" alt="Color Verde menta">
+                  <img src="../img/archWeb/ColoresPack/Ellipse4.webp" alt="Color Amarillo mantequilla">
+                  <img src="../img/archWeb/ColoresPack/Ellipse5.webp" alt="Color Melocotón claro">
+                  <img src="../img/archWeb/ColoresPack/Ellipse6.webp" alt="Color Azul cielo">
+                  <img src="../img/archWeb/ColoresPack/Ellipse7.webp" alt="Color Rosa chicle ">
+                  <img src="../img/archWeb/ColoresPack/Ellipse8.webp" alt="Color Lavanda">
+                  <img src="../img/archWeb/ColoresPack/Ellipse9.webp" alt="Color Verde aqua">
+                  <img src="../img/archWeb/ColoresPack/Ellipse10.webp" alt="Color Azul océano">
+                </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="precio">00,00€</span>
+                    <button class="btn-azulPq" >Añadir al carrito</button>
+                </div>
+        </article>
+        <article class="carta-productos">
+            <img src="../img/archWeb/kit_personalizables/kit_policia_01.webp" title="Pack Cumpleaños personalizado Policía" alt="Pack Cumpleaños personalizado Policía" class="product-img">
+                <h2 class="titleProductos">Temática Policía</h2>
+                <label for="nombrePackPolic">Nombre: </label>
+                <input type="text" name="nombrePackPolic" id="nombrePackPolic" class="input-azul" required>
+                <label for="edadPackPolic">Edad:</label>
+                <input type="text" name="edadPackPolic" id="edadPackPolic" class="input-azul">
+                <label for="cantidadInvPackPolic">Cantidad de invitados:</label>
+                <select class="cant-invt" id="cantidadInvPackPolic">
+                    <option>10 Invitados</option>
+                    <option>15 Invitados</option>
+                    <option>20 Invitados</option>
+                    <option>25 Invitados</option>
+                </select>
+            <div class="color-select">
+                <span>Selecciona el color:</span>
+                <div class="vista-colores">
+                  <img src="../img/archWeb/ColoresPack/Ellipse1.webp" alt="Color Rosa melocotón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse2.webp" alt="Color Rosa salmón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse3.webp" alt="Color Verde menta">
+                  <img src="../img/archWeb/ColoresPack/Ellipse4.webp" alt="Color Amarillo mantequilla">
+                  <img src="../img/archWeb/ColoresPack/Ellipse5.webp" alt="Color Melocotón claro">
+                  <img src="../img/archWeb/ColoresPack/Ellipse6.webp" alt="Color Azul cielo">
+                  <img src="../img/archWeb/ColoresPack/Ellipse7.webp" alt="Color Rosa chicle ">
+                  <img src="../img/archWeb/ColoresPack/Ellipse8.webp" alt="Color Lavanda">
+                  <img src="../img/archWeb/ColoresPack/Ellipse9.webp" alt="Color Verde aqua">
+                  <img src="../img/archWeb/ColoresPack/Ellipse10.webp" alt="Color Azul océano">
+                </div>
+            </div>
+            <div class="precio-producto">
+                <span class="precio">00,00€</span>
+                <button class="btn-azulPq" >Añadir al carrito</button>
+            </div>
+        </article>
+        <article class="carta-productos">
+            <img src="../img/archWeb/kit_personalizables/kit_arcoiris_01.webp" title="Pack Cumpleaños personalizado Arcoíris" alt="Pack Cumpleaños personalizado Arcoíris" class="product-img">
+                <h2 class="titleProductos">Temática Arcoíris</h2>
+                <label for="nombrePackArcoiris">Nombre: </label>
+                <input type="text" name="nombrePackArcoiris" id="nombrePackArcoiris" class="input-azul" required>
+                <label for="edadPackArcoiris">Edad:</label>
+                <input type="text" name="edadPackArcoiris" id="edadPackArcoiris" class="input-azul">
+                <label for="cantidadInvPackArcoiris">Cantidad de invitados:</label>
+                <select class="cant-invt" id="cantidadInvPackArcoiris">
+                    <option>10 Invitados</option>
+                    <option>15 Invitados</option>
+                    <option>20 Invitados</option>
+                    <option>25 Invitados</option>
+                </select>
+                <div class="color-select">
+                <span>Selecciona el color:</span>
+                <div class="vista-colores">
+                  <img src="../img/archWeb/ColoresPack/Ellipse1.webp" alt="Color Rosa melocotón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse2.webp" alt="Color Rosa salmón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse3.webp" alt="Color Verde menta">
+                  <img src="../img/archWeb/ColoresPack/Ellipse4.webp" alt="Color Amarillo mantequilla">
+                  <img src="../img/archWeb/ColoresPack/Ellipse5.webp" alt="Color Melocotón claro">
+                  <img src="../img/archWeb/ColoresPack/Ellipse6.webp" alt="Color Azul cielo">
+                  <img src="../img/archWeb/ColoresPack/Ellipse7.webp" alt="Color Rosa chicle ">
+                  <img src="../img/archWeb/ColoresPack/Ellipse8.webp" alt="Color Lavanda">
+                  <img src="../img/archWeb/ColoresPack/Ellipse9.webp" alt="Color Verde aqua">
+                  <img src="../img/archWeb/ColoresPack/Ellipse10.webp" alt="Color Azul océano">
+                </div>
+              </div>
+                <div class="precio-producto">
+                    <span class="precio">00,00€</span>
+                    <button class="btn-azulPq" >Añadir al carrito</button>
+                </div>
+        </article>
+        <article class="carta-productos">
+            <img src="../img/archWeb/kit_personalizables/kit_sirena_01.webp" title="Pack Cumpleaños personalizado Sirena" alt="Pack Cumpleaños personalizado Sirena" class="product-img">
+                <h2 class="titleProductos">Temática Sirena</h2>
+                <label for="nombrePackSirena">Nombre: </label>
+                <input type="text" name="nombrePackSirena" id="nombrePackSirena" class="input-azul" required>
+                <label for="edadPackSirena">Edad:</label>
+                <input type="text" name="edadPackSirena" id="edadPackSirena" class="input-azul">
+                <label for="cantidadInvPackSirena">Cantidad de invitados:</label>
+                <select class="cant-invt" id="cantidadInvPackSirena">
+                    <option>10 Invitados</option>
+                    <option>15 Invitados</option>
+                    <option>20 Invitados</option>
+                    <option>25 Invitados</option>
+                </select>
+
+                <div class="color-select">
+                <span>Selecciona el color:</span>
+                <div class="vista-colores">
+                  <img src="../img/archWeb/ColoresPack/Ellipse1.webp" alt="Color Rosa melocotón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse2.webp" alt="Color Rosa salmón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse3.webp" alt="Color Verde menta">
+                  <img src="../img/archWeb/ColoresPack/Ellipse4.webp" alt="Color Amarillo mantequilla">
+                  <img src="../img/archWeb/ColoresPack/Ellipse5.webp" alt="Color Melocotón claro">
+                  <img src="../img/archWeb/ColoresPack/Ellipse6.webp" alt="Color Azul cielo">
+                  <img src="../img/archWeb/ColoresPack/Ellipse7.webp" alt="Color Rosa chicle ">
+                  <img src="../img/archWeb/ColoresPack/Ellipse8.webp" alt="Color Lavanda">
+                  <img src="../img/archWeb/ColoresPack/Ellipse9.webp" alt="Color Verde aqua">
+                  <img src="../img/archWeb/ColoresPack/Ellipse10.webp" alt="Color Azul océano">
+                </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="precio">00,00€</span>
+                    <button class="btn-azulPq" >Añadir al carrito</button>
+                </div>
+        </article>
+      </section>
+     
+    </main>
+    <!--Pie de pagina-->
+    <footer>
+      <nav id="menu-social">
+        <a href="#" aria-label="Icono Whatsapp"><img src="../img/iconos_svg/IconWhatsapp.svg" alt="Icono Whatsapp"
+            title="Ir a nuestra cuenta de Whatsapp"><span>Whatsapp</span></a>
+        <a href="#" aria-label="Icono Instagram"><img src="../img/iconos_svg/IconInstagram.svg" alt="Icono Instagram"
+            title="Ir a nuestra cuenta de Instagram"><span>Instagram</span></a>
+        <a href="#" aria-label="Icono Facebook"><img src="../img/iconos_svg/IconFacebook.svg" alt="Icono Facebook"
+            title="Ir a nuestra cuenta de Facebook"><span>Facebook</span></a>
+        <a href="#" aria-label="Icono Pinterest"><img src="../img/iconos_svg/IconPinterest.svg" alt="Icono Pinterest"
+            title="Ir a nuestra cuenta de Pinterest"><span>Pinterest</span></a>
+      </nav>
+      <div id="footer-central">
+        <div class="footer-form-newslet">
+          <form class="footer-form" action="/proceso-suscripcion" method="POST">
+            <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
+            <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
+            <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
+            <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
+            <span class="subscrito-newsletter">¡Te has suscrito correctamente!</span>
+            <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
+            <!--<img src="../img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
+          </form>
+        </div>
+        <div class="central-footer">
+          <h5 class="footer-contacto"><a href="contacto.html">¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</a></h5>
+          <nav class="menu-footer">
+            <ul id="lista-footer">
+              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="toppers.html" class="item-menu">Toppers</a></li>
+              <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
+              <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
+              <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
+              <li><a href="menaje.html" class="item-menu">Menaje</a></li>
+              <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
+            </ul>
+          </nav>
+        </div>
+  
+        <div class="logo-footer" id="info">
+          <div id="info-logo">
+            <a href="../Index.html">
+              <img class="logo-pq" src="../img/logoCirc.svg" alt="Logo MamaEditatuFiesta Secundario" title="Ir a inicio">
+            </a>
+          </div>
+          <div id="info-tex">
+            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"> Envíos a Península y Baleares</span><br>
+            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"> &nbsp; Métodos de pago
+              <img class="icono" src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa">
+              <img class="icono" src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard">
+              <img class="icono" src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal">
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="politicas">
+          <a href="Politicas.html" aria-label="Visitar nuestra politica de Cookies">Política de Cookies</a>&nbsp; · &nbsp;<br>
+          <a href="AvisoLegal.html" aria-label="Visitar nuestro aviso legal">Aviso Legal</a> &nbsp; · &nbsp;
+          <a href="PolíticaPrivacidad.html" aria-label="Visitar nuestra politica de Privacidad"> Privacidad</a> &nbsp; · &nbsp;
+          <a href="Accesibilidadweb.html" aria-label="Visitar nuestra politica de Accesibilidad">Accesibilidad</a>
+          <small>&copy; 2025 MAMAEDITATUFIESTA</small>
+      </div>
+    </footer>
+    <!-- SCRIPT -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>

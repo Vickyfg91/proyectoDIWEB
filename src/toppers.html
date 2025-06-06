@@ -42,7 +42,7 @@
           </nav>
         </div>
         <div class="fila-1">
-          <a id="logoprin" href="Index.html">
+          <a id="logoprin" href="../Index.html">
             <picture>
               <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
             </picture>
@@ -52,12 +52,12 @@
           <div class="iconos-derecha">
             <nav id="navUsuario">
               <ul>
-                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
+                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img class="icono" src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
               </ul>
             </nav>
             <nav id="navCarrito">
               <ul>
-                <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span>Carrito(0)</span></a></li>
+                <li><a href="carrito.html" aria-label="Ir a Carrito"><img class="icono" src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span id="txt">Carrito</span><span id="contador"> (0) </span></a></li>
               </ul>
             </nav>
           </div>
@@ -86,55 +86,113 @@
           </div>
 
   <!-- LISTA DE PRODUCTOS -->
+   <div class="notificacion">Artículo añadido al carrito correctamente</div>
       <section class="lista-product">
         <h2>Articulos</h2>
         <article class="carta-productos">
+            <img src="../img/archWeb/topper/topper8.webp" title="Topper Unicornios" alt="Topper Unicornios" class="product-img">
+              <h2 class="titleProductos">Topper Unicornios</h2>
+              <label for="nombreTopperUnicornios">Nombre: </label>
+              <input type="text" name="nombreTopper" id="nombreTopperUnicornios" class="input-azul" required>
+              <label for="edadTopperUnicornios">Edad:</label>
+              <input type="text" name="edadTopper" id="edadTopperUnicornios" class="input-azul">
+              <div class="precio-producto">
+                  <span class="precio">29,95€</span>
+                  <button type="submit" class="btn-azulPq" >Añadir al carrito</button>
+              </div>
+        </article>
+        <article class="carta-productos">
+            <img src="../img/archWeb/topper/topper2.webp" title="Topper Dinosaurios Dulce" alt="Topper Dinosaurios Dulce" class="product-img">
+              <h2 class="titleProductos">Topper Dinosaurios</h2>
+              <label for="nombreTopperDinosaurios">Nombre: </label>
+              <input type="text" name="nombreTopper" id="nombreTopperDinosaurios" class="input-azul" required>
+              <label for="edadTopperDinosaurios">Edad:</label>
+              <input type="text" name="edadTopper" id="edadTopperDinosaurios" class="input-azul">
+              <div class="precio-producto">
+                  <span class="precio">29,95€</span>
+                  <button class="btn-azulPq" type="submit">Añadir al carrito</button>
+              </div>
+        </article>
+        <article class="carta-productos">
             <img src="../img/archWeb/topper/topper1.webp" title="Topper Dulce" alt="Topper Dulce" class="product-img">
-              <h2 class="titleTopper">Topper Dulce</h2>
+              <h2 class="titleProductos">Topper Dulce</h2>
               <label for="nombreTopperDulce">Nombre: </label>
               <input type="text" name="nombreTopper" id="nombreTopperDulce" class="input-azul" required>
               <label for="edadTopperDulce">Edad:</label>
-              <input type="text" name="edadeTopper" id="edadTopperDulce" class="input-azul">
+              <input type="text" name="edadTopper" id="edadTopperDulce" class="input-azul">
               <div class="precio-producto">
-                  <span class="precio">29,95€</span>
-                  <button class="btn-azulPq" >Añadir al carrito</button>
+                  <span class="precio">19,95€</span>
+                  <button class="btn-azulPq" type="submit">Añadir al carrito</button>
               </div>
         </article>
          <article class="carta-productos">
-            <img src="../img/archWeb/topper/topper1.webp" title="Topper Dulce" alt="Topper Dulce" class="product-img">
-              <h2 class="titleTopper">Topper Dulce</h2>
-              <label for="nombreTopper">Nombre: </label>
-              <input type="text" name="nombreTopper" id="nombreTopperDulce" class="input-azul" required>
-              <label for="edadeTopper">Edad:</label>
-              <input type="text" name="edadeTopper" id="edadTopperDulce" class="input-azul">
+            <img src="../img/archWeb/topper/topper12.webp" title="Topper Dorado" alt="Topper Dorado" class="product-img">
+              <h2 class="titleProductos">Topper Dorado</h2>
+              <label for="nombreTopperDorado">Nombre: </label>
+              <input type="text" name="nombreTopper" id="nombreTopperDorado" class="input-azul" required>
+              <label for="edadTopperDorado">Edad:</label>
+              <input type="text" name="edadTopper" id="edadTopperDorado" class="input-azul">
               <div class="precio-producto">
-                  <span class="precio">29,95€</span>
-                  <button class="btn-azulPq" >Añadir al carrito</button>
+                  <span class="precio">24,95€</span>
+                  <button class="btn-azulPq" type="submit">Añadir al carrito</button>
               </div>
         </article>
-         <article class="carta-productos">
-            <img src="../img/archWeb/topper/topper1.webp" title="Topper Dulce" alt="Topper Dulce" class="product-img">
-              <h2 class="titleTopper">Topper Dulce</h2>
-              <label for="nombreTopper">Nombre: </label>
-              <input type="text" name="nombreTopper" id="nombreTopperDulce" class="input-azul" required>
-              <label for="edadeTopper">Edad:</label>
-              <input type="text" name="edadeTopper" id="edadTopperDulce" class="input-azul">
+        <article class="carta-productos">
+            <img src="../img/archWeb/topper/topper5.webp" title="Topper Jardin" alt="Topper Jardin" class="product-img">
+              <h2 class="titleProductos">Topper Jardin</h2>
+              <label for="nombreTopperJardin">Nombre: </label>
+              <input type="text" name="nombreTopper" id="nombreTopperJardin" class="input-azul" required>
+              <label for="edadTopperJardin">Edad:</label>
+              <input type="text" name="edadTopper" id="edadTopperJardin" class="input-azul">
               <div class="precio-producto">
-                  <span class="precio">29,95€</span>
-                  <button class="btn-azulPq" >Añadir al carrito</button>
+                  <span class="precio">21,95€</span>
+                  <button class="btn-azulPq" type="submit">Añadir al carrito</button>
               </div>
         </article>
-         <article class="carta-productos">
-            <img src="../img/archWeb/topper/topper1.webp" title="Topper Dulce" alt="Topper Dulce" class="product-img">
-              <h2 class="titleTopper">Topper Dulce</h2>
-              <label for="nombreTopper">Nombre: </label>
-              <input type="text" name="nombreTopper" id="nombreTopperDulce" class="input-azul" required>
-              <label for="edadeTopper">Edad:</label>
-              <input type="text" name="edadeTopper" id="edadTopperDulce" class="input-azul">
+        <article class="carta-productos">
+            <img src="../img/archWeb/topper/topper9.webp" title="Topper Sirena" alt="Topper Sirena" class="product-img">
+              <h2 class="titleProductos">Topper Sirena</h2>
+              <label for="nombreTopperSirena">Nombre: </label>
+              <input type="text" name="nombreTopper" id="nombreTopperSirena" class="input-azul" required>
+              <label for="edadTopperSirena">Edad:</label>
+              <input type="text" name="edadTopper" id="edadTopperSirena" class="input-azul">
               <div class="precio-producto">
                   <span class="precio">29,95€</span>
-                  <button class="btn-azulPq" >Añadir al carrito</button>
+                  <button class="btn-azulPq" type="submit">Añadir al carrito</button>
               </div>
+        </article>
+      </section>
+      <section class="lista-product">
+        <h3 class="titTopperPers"> Y si no encuentras lo que buscas ...Personalízalo</h3>
+        <article class="carta-productos">
+            <img src="../img/archWeb/topper/topper9.webp" title="Topper Personalizado" alt="Topper Personalizado" class="product-img">
+              <h2 class="titleProductos">Topper Personalizado</h2>
+              <label for="nombreTopperPersonalizado">Nombre: </label>
+              <input type="text" name="nombreTopper" id="nombreTopperPersonalizado" class="input-azul" required>
+              <label for="edadTopperPersonalizado">Edad:</label>
+              <input type="text" name="edadTopper" id="edadTopperPersonalizado" class="input-azul">
+              <label for="tematicaTopperPersonalizado">Tematica solicitada:</label>
+              <input type="text" name="tematicaTopper" id="tematicaTopperPersonalizado" class="input-azul">
+              <div class="color-select">
+                <span>Selecciona el color:</span>
+                <div class="vista-colores">
+                  <img src="../img/archWeb/ColoresPack/Ellipse1.webp" alt="Color Rosa melocotón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse2.webp" alt="Color Rosa salmón">
+                  <img src="../img/archWeb/ColoresPack/Ellipse3.webp" alt="Color Verde menta">
+                  <img src="../img/archWeb/ColoresPack/Ellipse4.webp" alt="Color Amarillo mantequilla">
+                  <img src="../img/archWeb/ColoresPack/Ellipse5.webp" alt="Color Melocotón claro">
+                  <img src="../img/archWeb/ColoresPack/Ellipse6.webp" alt="Color Azul cielo">
+                  <img src="../img/archWeb/ColoresPack/Ellipse7.webp" alt="Color Rosa chicle ">
+                  <img src="../img/archWeb/ColoresPack/Ellipse8.webp" alt="Color Lavanda">
+                  <img src="../img/archWeb/ColoresPack/Ellipse9.webp" alt="Color Verde aqua">
+                  <img src="../img/archWeb/ColoresPack/Ellipse10.webp" alt="Color Azul océano">
+                </div>
+              </div>
+              <div class="precio-producto">
+                  <span class="precio">39,95€</span>
+                  <button class="btn-azulPq" type="submit">Añadir al carrito</button>
+              </div>
+              
         </article>
       </section>
     </main>
@@ -157,6 +215,7 @@
             <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
             <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
             <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
+            <span class="subscrito-newsletter">¡Te has suscrito correctamente!</span>
             <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
             <!--<img src="../img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
           </form>
@@ -165,12 +224,12 @@
           <h5 class="footer-contacto"><a href="contacto.html">¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</a></h5>
           <nav class="menu-footer">
             <ul id="lista-footer">
-              <li><a href="kitCumpleaños.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
               <li><a href="toppers.html" class="item-menu">Toppers</a></li>
               <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
               <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
               <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
-              <li><a href="menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="menaje.html" class="item-menu">Menaje</a></li>
               <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
             </ul>
           </nav>
@@ -183,11 +242,11 @@
             </a>
           </div>
           <div id="info-tex">
-            <span class="info-footer"><img src="../img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"> Envíos a Península y Baleares</span><br>
-            <span class="info-footer"><img src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"> &nbsp; Métodos de pago
-              <img src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa">
-              <img src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard">
-              <img src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal">
+            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"> Envíos a Península y Baleares</span><br>
+            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"> &nbsp; Métodos de pago
+              <img class="icono" src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa">
+              <img class="icono" src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard">
+              <img class="icono" src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal">
             </span>
           </div>
         </div>
@@ -200,7 +259,7 @@
           <small>&copy; 2025 MAMAEDITATUFIESTA</small>
       </div>
     </footer>
-  <!-- SCRIPT -->
+    <!-- SCRIPT -->
     <script src="../js/script.js"></script>
   </body>
 </html>

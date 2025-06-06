@@ -36,13 +36,13 @@
               <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
               <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
               <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
-              <li><a href="menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="menaje.html" class="item-menu">Menaje</a></li>
               <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
             </ul>
           </nav>
         </div>
         <div class="fila-1">
-          <a id="logoprin" href="Index.html">
+          <a id="logoprin" href="../Index.html">
             <picture>
               <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
             </picture>
@@ -52,12 +52,12 @@
           <div class="iconos-derecha">
             <nav id="navUsuario">
               <ul>
-                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
+                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img class="iconos" src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
               </ul>
             </nav>
             <nav id="navCarrito">
               <ul>
-                <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span>Carrito(0)</span></a></li>
+                <li><a href="carrito.html" aria-label="Ir a Carrito"><img class="iconos" src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span id="txt">Carrito</span><span id="contador"> (0) </span></a></li>
               </ul>
             </nav>
           </div>
@@ -74,7 +74,7 @@
         </nav>
         <h1>Carrito</h1>
         <section class="contenedor-carrito">
-          <h2>Resumen del pedido (1)</h2>
+          <h2>Resumen del pedido</h2>
           <article class="producto-carrito">
             <h3>PRODUCTOS</h3>
             <img src="../img/archWeb/kit_personalizables/kit_unicornio_01.webp" alt="Kit Personalizados" class="producto-img">
@@ -84,11 +84,12 @@
               <p class="detalle">Nombre: <span>Marta</span></p>
               <p class="detalle">Edad: <span>6</span></p>
               <p class="detalle">Num Invitados: <span>10</span></p>
+              <span id="precioXitem">P.V.P: 56,00€</span>
             </div>
         
             <div class="producto-cantidad">
               <button class="boton-cantidad">+</button><input type="text" value="1" class="cantidad-input"><button class="boton-cantidad">-</button>
-              <button class="boton-eliminar"><img src="../img/iconos_svg/Iconbasura.svg" alt="icono eliminar" ></button>
+              <button class="boton-eliminar"><img class="iconos" src="../img/iconos_svg/Iconbasura.svg" alt="icono eliminar" ></button>
             </div>
           </article>
         
@@ -96,19 +97,19 @@
             <h4 id="titleTotal">Totales del carrito</h4>
             <div class="linea">
               <span>Productos (1)</span>
-              <span>56,00€</span>
+              <span id="precioProductos">56,00€</span>
             </div>
             <div class="linea">
               <span>Subtotal</span>
-              <span>56,00€</span>
+              <span id="precioSubtotal">56,00€</span>
             </div>
             <div class="linea">
               <span>Envío</span>
-              <span>4,95€</span>
+              <span id="precioEnvio">4,95€</span>
             </div>
             <div class="linea total">
               <span>Total</span>
-              <span>60,95€</span>
+              <span id="precioTotal">60,95€</span>
             </div>
             <span>Impuestos incluidos</span>
           </article>
@@ -134,6 +135,7 @@
             <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
             <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
             <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
+            <span class="subscrito-newsletter">¡Te has suscrito correctamente!</span>
             <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
             <!--<img src="../img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
           </form>
@@ -142,12 +144,12 @@
           <h5 class="footer-contacto"><a href="contacto.html">¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</a></h5>
           <nav class="menu-footer">
             <ul id="lista-footer">
-              <li><a href="kitCumpleaños.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
               <li><a href="toppers.html" class="item-menu">Toppers</a></li>
               <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
               <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
               <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
-              <li><a href="menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="menaje.html" class="item-menu">Menaje</a></li>
               <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
             </ul>
           </nav>
@@ -160,11 +162,11 @@
             </a>
           </div>
           <div id="info-tex">
-            <span class="info-footer"><img src="../img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"> Envíos a Península y Baleares</span><br>
-            <span class="info-footer"><img src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"> &nbsp; Métodos de pago
-              <img src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa">
-              <img src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard">
-              <img src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal">
+            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"> Envíos a Península y Baleares</span><br>
+            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"> &nbsp; Métodos de pago
+              <img class="icono" src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa">
+              <img class="icono" src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard">
+              <img class="icono" src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal">
             </span>
           </div>
         </div>

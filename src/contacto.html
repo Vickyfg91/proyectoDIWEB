@@ -36,13 +36,13 @@
               <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
               <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
               <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
-              <li><a href="menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="menaje.html" class="item-menu">Menaje</a></li>
               <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
             </ul>
           </nav>
         </div>
         <div class="fila-1">
-          <a id="logoprin" href="Index.html">
+          <a id="logoprin" href="../Index.html">
             <picture>
               <img id="logoPrincipal" src="../img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio">
             </picture>
@@ -52,12 +52,12 @@
           <div class="iconos-derecha">
             <nav id="navUsuario">
               <ul>
-                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
+                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img class="icono" src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
               </ul>
             </nav>
             <nav id="navCarrito">
               <ul>
-                <li><a href="carrito.html" aria-label="Ir a Carrito"><img src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span>Carrito(0)</span></a></li>
+                <li><a href="carrito.html" aria-label="Ir a Carrito"><img class="icono" src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"><span id="txt">Carrito</span><span id="contador"> (0) </span></a></li>
               </ul>
             </nav>
           </div>
@@ -69,7 +69,7 @@
     <!-- menu -->
     <main id="contacto">
         <nav class="migasPan" aria-label="Ruta de navegación">
-          <a href="../index.html">INICIO</a> /
+          <a href="../Index.html">INICIO</a> /
           <span aria-current="page">CONTACTO</span>
         </nav>
         <h1>¡Contáctanos!</h1>
@@ -89,21 +89,21 @@
               <input type="text" id="asunto" name="asunto" required>
               
               <label for="mensaje">Escribe tu mensaje o consulta* </label>
-              <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+              <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
               
               <button type="submit" id="btn-contacto" class="btn-rosa">Enviar Mensaje</button>
               
               <!-- Mensajes ok o error -->
-              <div class="respuesta-mensaje" id="success-message" style="display: none; color: green;">
+              <div class="respuesta-mensaje" id="success-message">
                 ¡Gracias por contactarnos! Te responderemos pronto.
               </div>
-              <div class="respuesta-mensaje" id="error-message" style="display: none; color: red;">
+              <div class="respuesta-mensaje" id="error-message">
                 Oops, algo salió mal. Intenta de nuevo más tarde.
               </div>
             </form>
           </section>
     </main>
-    <!--Pie de pagina-->
+  <!--Pie de pagina-->
     <footer>
       <nav id="menu-social">
         <a href="#" aria-label="Icono Whatsapp"><img src="../img/iconos_svg/IconWhatsapp.svg" alt="Icono Whatsapp"
@@ -122,6 +122,7 @@
             <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
             <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
             <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
+            <span class="subscrito-newsletter">¡Te has suscrito correctamente!</span>
             <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
             <!--<img src="../img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
           </form>
@@ -130,12 +131,12 @@
           <h5 class="footer-contacto"><a href="contacto.html">¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</a></h5>
           <nav class="menu-footer">
             <ul id="lista-footer">
-              <li><a href="kitCumpleaños.html" class="item-menu">Kit Cumpleaños</a></li>
+              <li><a href="kit.html" class="item-menu">Kit Cumpleaños</a></li>
               <li><a href="toppers.html" class="item-menu">Toppers</a></li>
               <li><a href="personalizados.html" class="item-menu">Kit Personalizado</a></li>
               <li><a href="sticker.html" class="item-menu">Sticker Personalizadas</a></li>
               <li><a href="invitaciones.html" class="item-menu">Invitaciones</a></li>
-              <li><a href="menaje.html" class="item-menu">Decoración y Menaje</a></li>
+              <li><a href="menaje.html" class="item-menu">Menaje</a></li>
               <li><a href="SobreMi.html" class="item-menu">Sobre mí</a></li>
             </ul>
           </nav>
@@ -148,11 +149,11 @@
             </a>
           </div>
           <div id="info-tex">
-            <span class="info-footer"><img src="../img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"> Envíos a Península y Baleares</span><br>
-            <span class="info-footer"><img src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"> &nbsp; Métodos de pago
-              <img src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa">
-              <img src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard">
-              <img src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal">
+            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"> Envíos a Península y Baleares</span><br>
+            <span class="info-footer"><img class="icono" src="../img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title=" Métodos de pago aceptados"> &nbsp; Métodos de pago
+              <img class="icono" src="../img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa">
+              <img class="icono" src="../img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard">
+              <img class="icono" src="../img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal">
             </span>
           </div>
         </div>
