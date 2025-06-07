@@ -453,55 +453,45 @@ $(function () {
     });
 });
 
-
-/*boton que camboa de ventana*/
 $(function () {
-    $("#btn-comprar").on("click", function () {
-        window.location.href = "tramitacion.html";
+  $('form.formulario').on('submit', function (e) {
+    e.preventDefault(); // evitamos la acción por defecto para validar primero
+
+    const $form = $(this);
+
+    $form.find('input[required], textarea[required]').each(function () {
+      $(this).removeClass('input-error');
+      $(this).next('.error-msg').remove().finish();
     });
-});
-$(function () {
-    $("#btn-pagar").on("click", function () {
-        window.location.href = "pago.html";
-    });
-});
-$(function () {
-    $('form.formulario').on('submit', function (e) {
-        e.preventDefault();
-        console.log('Submit formulario contacto');
-        //Validar formulario que se clicko submit
-        const $form = $(this);
+    $('#success-message').hide();
+    $('#error-message').hide();
 
-        $form.find('input[required], textarea[required]').each(function () {
-            $(this).removeClass('input-error');
-            $(this).next('.error-msg').remove().finish();
-        });
-        $('#success-message').hide();
-        $('#error-message').hide();
-
-        let isValid = true;
-        $form.find('input[required], textarea[required]').each(function () {
-            if ($(this).val().trim() === '') {
-                isValid = false;
-                $(this).addClass('input-error');
-                if ($(this).next('.error-msg').length === 0) {
-                    $(this).after('<div class="error-msg" style="color:red; font-size: 0.9em;">Este campo es obligatorio y no puede estar vacío.</div>');
-                }
-            }
-        });
-
-        if (isValid) {
-            $('#success-message').show();
-        } else {
-            $('#success-message').show();
-            setTimeout(function () {
-                $('#success-message').hide();
-            }, 200);
+    let isValid = true;
+    $form.find('input[required], textarea[required]').each(function () {
+      if ($(this).val().trim() === '') {
+        isValid = false;
+        $(this).addClass('input-error');
+        if ($(this).next('.error-msg').length === 0) {
+          $(this).after('<div class="error-msg" style="color:red; font-size: 0.9em;">Este campo es obligatorio y no puede estar vacío.</div>');
         }
-
-        $form[0].reset();
+      }
     });
+
+    if (isValid) {
+      // Quitamos la prevención y enviamos el formulario (lo que hace la redirección)
+      e.currentTarget.submit();
+    } else {
+      $('#success-message').show();
+      setTimeout(function () {
+        $('#success-message').hide();
+      }, 200);
+    }
+
+    // No resetear el formulario aquí porque podría ser que lo quieres enviar con los datos
+    // $form[0].reset();
+  });
 });
+
 
 $(function () {
     // Para el formulario de newsletter, que tiene clase footer-form

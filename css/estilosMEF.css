@@ -586,13 +586,16 @@ main#main-sobreMi>article#reproductor>section#reproductorVideo>div#barra>input[t
   max-width: 18rem;
   width: 100%;
 }
-.btn-azul {
+.img-btn-azul {
   background-color: var(--azul);
   border: 2px solid var(--azul);
   border-radius: .5rem;
   color: var(--blanco);
   font-weight: bold;
   cursor: pointer;
+  width: 70%;
+  text-align: center;
+  padding: 1rem;
   font-family: 'Quicksand', sans-serif;
 }
 .archivos {
@@ -1339,6 +1342,7 @@ footer {
   justify-content: space-between;
   color: var(--gris);
   padding: 0 1.5rem;
+  margin-top: 5rem;
 }
 
 footer>nav#menu-social {
@@ -1681,6 +1685,7 @@ div#politicas>small {
   footer {
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
   }
 
   footer>div#footer-central {
