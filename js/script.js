@@ -252,7 +252,7 @@ $(function () {
     $('#nombre').on('blur', function () {
         const $campo = $(this);
         const valor = $campo.val().trim();
-        const mensajeValido = "Solo se permiten letras y espacios (tildes permitidas).";
+        const mensajeValido = "Solo se permiten letras y espacios.";
 
         if (valor.length > 0 && !regexNombre.test(valor)) {
             mostrarError($campo, mensajeValido);
@@ -335,22 +335,6 @@ $(function () {
         }
     });
 });
-
-/*Al posicionarse el ratón sobre un articulo este se opaca y aparece el titulo
-$(function () {
-    $("article.item > a").css("display", "none");
-
-    $('article.item').on('mouseenter', function () {
-      $(this).css("opacity", "0.6");
-      $(this).find('a.producto').css("display", "block");
-    });
-  
-    $('article.item').on('mouseleave', function () {
-      $(this).css("opacity", "1");
-      $(this).find('a.producto').css("display", "none");
-    });
-  });
-*/
 
 //Efecto boton azul
 $(function () {
@@ -445,7 +429,21 @@ $(function () {
         });
 });
 
-//Cuando selecciona un color se marca el borde
+$(function () { 
+    $('#crearCuenta').on('submit', function () {
+        $('#mensaje-recuperacion').hide();
+
+        if ($('#email').val().trim() === '') {
+            $('#email')[0].reportValidity();
+            return;
+        }
+        $('#mensaje-recuperacion').show();
+setTimeout(() => {
+            $('#mensaje-recuperacion').fadeOut();
+        }, 2500);
+        this.reset();
+    });
+});
 $(function () {
     $('.vista-colores img').on('click', function () {
         $('.vista-colores img').removeClass('seleccionado');
@@ -454,49 +452,43 @@ $(function () {
 });
 
 $(function () {
-  $('form.formulario').on('submit', function (e) {
-    e.preventDefault(); // evitamos la acción por defecto para validar primero
+    $('form.formulario').on('submit', function () {
 
-    const $form = $(this);
+        const $form = $(this);
 
-    $form.find('input[required], textarea[required]').each(function () {
-      $(this).removeClass('input-error');
-      $(this).next('.error-msg').remove().finish();
-    });
-    $('#success-message').hide();
-    $('#error-message').hide();
-
-    let isValid = true;
-    $form.find('input[required], textarea[required]').each(function () {
-      if ($(this).val().trim() === '') {
-        isValid = false;
-        $(this).addClass('input-error');
-        if ($(this).next('.error-msg').length === 0) {
-          $(this).after('<div class="error-msg" style="color:red; font-size: 0.9em;">Este campo es obligatorio y no puede estar vacío.</div>');
-        }
-      }
-    });
-
-    if (isValid) {
-      // Quitamos la prevención y enviamos el formulario (lo que hace la redirección)
-      e.currentTarget.submit();
-    } else {
-      $('#success-message').show();
-      setTimeout(function () {
+        $form.find('input[required], textarea[required]').each(function () {
+            $(this).removeClass('input-error');
+            $(this).next('.error-msg').remove().finish();
+        });
         $('#success-message').hide();
-      }, 200);
-    }
+        $('#error-message').hide();
 
-    // No resetear el formulario aquí porque podría ser que lo quieres enviar con los datos
-    // $form[0].reset();
-  });
+        let isValid = true;
+        $form.find('input[required], textarea[required]').each(function () {
+            if ($(this).val().trim() === '') {
+                isValid = false;
+                $(this).addClass('input-error');
+                if ($(this).next('.error-msg').length === 0) {
+                    $(this).after('<div class="error-msg" style="color:red; font-size: 0.9em;">Este campo es obligatorio y no puede estar vacío.</div>');
+                }
+            }
+        });
+
+        if (isValid) {
+            e.currentTarget.submit();
+        } else {
+            $('#success-message').show();
+            setTimeout(function () {
+                $('#success-message').hide();
+            }, 200);
+        }
+    });
 });
 
 
 $(function () {
     // Para el formulario de newsletter, que tiene clase footer-form
-    $('form.footer-form').on('submit', function (e) {
-        e.preventDefault();
+    $('form.footer-form').on('submit', function () {
         console.log('Submit formulario suscripcion');
         const $form = $(this);
         const $input = $form.find('input[name="newsletter"]');

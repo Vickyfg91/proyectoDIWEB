@@ -73,9 +73,10 @@
         <span aria-current="page">RECUPERAR CUENTA</span>
       </nav>
       <h1>Recupera tu Cuenta</h1>
-      <form class="formulario" id="crearCuenta">
+      <form class="formulario" id="crearCuenta"  method="get"  action="../Index.html">
         <label for="email">Correo Electrónico*</label>
         <input type="email" name="email" id="email" placeholder="Escribe tu correo de recuperación" required>
+        <div id="mensaje-recuperacion">Te hemos enviado un mail para recuperar tu cuenta</div>
         <button type="submit" id="btn-recuperar" class="btn-rosa">Recuperar Cuenta</button>
       </form>
     </main>
@@ -93,7 +94,7 @@
       </nav>
       <div id="footer-central">
         <div class="footer-form-newslet">
-          <form class="footer-form" action="/proceso-suscripcion" method="POST">
+          <form class="footer-form" action="/proceso-suscripcion" method="get" >
             <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
             <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
             <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>

@@ -35,18 +35,22 @@ a:hover {
 .subscrito-newsletter {
   display: none;
 }
-.subscrito-newsletter{
+
+.subscrito-newsletter {
   color: var(--blanco);
   font-size: 1.25rem;
 }
-.respuesta-mensaje#success-message{
+
+.respuesta-mensaje#success-message {
   display: none;
   color: green;
 }
-.respuesta-mensaje#error-message{
+
+.respuesta-mensaje#error-message {
   display: none;
   color: red;
 }
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -82,15 +86,18 @@ h5 {
   font-weight: 400;
   align-items: center;
 }
-p{
+
+p {
   text-align: justify;
 }
-.fijado{
-    position:fixed;
-    background-color: var(--blanco);
-    width:100%;
-    z-index: 9999999;
+
+.fijado {
+  position: fixed;
+  background-color: var(--blanco);
+  width: 100%;
+  z-index: 9999999;
 }
+
 .recAzul {
   border: 1px solid var(--azul);
   border-radius: 5px;
@@ -101,6 +108,7 @@ p{
   width: 70%;
   align-items: center;
 }
+
 .migasPan {
   font-size: 0.7em;
   font-family: 'Quicksand', sans-serif;
@@ -137,6 +145,7 @@ h4#titleTotal {
 h4.titleDatos {
   margin: 0.25rem auto;
 }
+
 /*Clase para video lectores de pantalla*/
 .descripcion-accesibilidad {
   position: absolute;
@@ -182,6 +191,7 @@ h4.titleDatos {
   border-radius: 0.5rem;
   font-family: 'Quicksand', sans-serif;
 }
+
 /*Formulario articulos*/
 .formulario-item {
   margin: 0 auto;
@@ -189,6 +199,7 @@ h4.titleDatos {
   flex-direction: column;
   width: 100%;
 }
+
 .input-error {
   border-color: #e63946;
   background-color: #ffe6e6;
@@ -199,6 +210,7 @@ h4.titleDatos {
   font-size: 0.875rem;
   margin-top: 0.2rem;
 }
+
 /* Versión móvil */
 /*HEADER*/
 header#top {
@@ -224,7 +236,7 @@ header#top>div {
 .fila-2 {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 
 .iconos-derecha {
@@ -233,19 +245,24 @@ header#top>div {
   gap: .5rem;
   margin-right: .5rem;
 }
-img#abrirMenu{
+
+img#abrirMenu {
   margin-left: 1rem;
 }
-.icono{
-vertical-align: middle;
+
+.icono {
+  vertical-align: middle;
 }
+
 .iconos-derecha nav {
   display: flex;
   align-items: center;
 }
+
 .iconos {
   margin-left: .15rem;
 }
+
 nav#menu-principal>span>img#abrirMenu {
   cursor: pointer;
 }
@@ -278,15 +295,17 @@ header#top>p#anuncio {
   background-color: var(--rosa);
   margin: 0;
   padding: 0.5rem;
-  
+
 }
-header#top > p#anuncio {
+
+header#top>p#anuncio {
   overflow-x: hidden;
   position: relative;
 }
 
 header#top>p#anuncio>a {
-  position: absolute; /* necesario para ka animacion jquery */
+  position: absolute;
+  /* necesario para ka animacion jquery */
   white-space: nowrap;
   font-size: 0.7rem;
   margin: .5rem;
@@ -340,7 +359,8 @@ header#top>div>div>nav#menu-principal>ul#menu>li>a>img#cerrarMenu {
   font-size: 0.7rem;
   color: var(--gris);
 }
-.titleVacio{
+
+.titleVacio {
   display: none;
 }
 
@@ -586,6 +606,7 @@ main#main-sobreMi>article#reproductor>section#reproductorVideo>div#barra>input[t
   max-width: 18rem;
   width: 100%;
 }
+
 .img-btn-azul {
   background-color: var(--azul);
   border: 2px solid var(--azul);
@@ -598,6 +619,7 @@ main#main-sobreMi>article#reproductor>section#reproductorVideo>div#barra>input[t
   padding: 1rem;
   font-family: 'Quicksand', sans-serif;
 }
+
 .archivos {
   display: flex;
   align-items: center;
@@ -610,14 +632,16 @@ main#main-sobreMi>article#reproductor>section#reproductorVideo>div#barra>input[t
   padding: .5rem 0rem;
   margin-top: 0.5rem;
 }
-.archivos > label{
+
+.archivos>label {
   padding: .5rem 1.1rem;
 }
-.subirArchivo{
+
+.subirArchivo {
   display: none;
 }
 
-div.notificacion{
+div.notificacion {
   display: none;
   position: fixed;
   top: 15rem;
@@ -625,10 +649,11 @@ div.notificacion{
   color: #3c763d;
   padding: 1rem 1.25rem;
   border-radius: 0.5rem;
-  box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   z-index: 9999;
   transform: translateX(-50%);
 }
+
 /*COOKIES*/
 div#fondo-opaco {
   position: fixed;
@@ -640,6 +665,7 @@ div#fondo-opaco {
   z-index: 999;
   display: none;
 }
+
 div#aviso-cookies {
   display: none;
   position: fixed;
@@ -650,24 +676,28 @@ div#aviso-cookies {
   width: 90%;
   max-width: 100rem;
   background-color: var(--amarillo);
-  padding:1rem 1.25rem;
+  padding: 1rem 1.25rem;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 0 2rem rgba(0,0,0,0.4);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
 }
-h2.titCookies{
+
+h2.titCookies {
   display: flex;
   font-size: 1.2rem;
   color: var(--gris);
 }
-div#aviso-cookies > img {
+
+div#aviso-cookies>img {
   display: flex;
   margin: 0;
   padding: 0;
 }
-div#aviso-cookies > p {
+
+div#aviso-cookies>p {
   font-size: 1rem;
 }
+
 div#aviso-cookies button {
   cursor: pointer;
   margin: 0.75rem;
@@ -686,6 +716,7 @@ img#cerrar-cookies {
   right: 1.1rem;
   cursor: pointer;
 }
+
 a#config-cookies {
   display: inline-block;
   margin: 0.75rem;
@@ -698,6 +729,7 @@ a#config-cookies {
   text-align: center;
   font-size: 1rem;
 }
+
 /*SLIDER*/
 .control-buttons {
   text-align: center;
@@ -824,7 +856,6 @@ main#main-index>section>div>section>article.item {
 }
 
 main#main-index>section>div>section>h3#title-nuestrosPr {
-
   flex: 100%;
   margin-bottom: 0;
 }
@@ -943,11 +974,12 @@ main#contacto>section#sec-contacto>p {
   color: var(--gris);
 }
 
-.producto-mostrar{
+.producto-mostrar {
   display: flex;
   flex-direction: column;
 }
-.producto-cantidad{
+
+.producto-cantidad {
   display: flex;
   flex-direction: row;
   margin-top: 1.2rem;
@@ -1098,25 +1130,44 @@ main#menu-pago {
 }
 
 /*Detalles Orden*/
-main#detalles-pedido>section#contenedor-detalles {
-  max-width: 37.5rem;
-  margin: 0 auto;
-  padding: 1.5rem;
-}
-
 .producto-imagen>img {
   width: 5rem;
-  height: 10rem;
   border-radius: 0.5rem;
 }
 
+.contenedor-detalles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.datos-envio {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.detalles-pago{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+#contenedor-detalles > h2{
+  margin: 1rem;
+}
+.producto-resumen{
+  width: 90%;
+}
 .producto-resumen,
 .datos-envio,
 .detalles-pago {
-  border: 1.25px solid var(--rosa);
+  border: 2px solid var(--rosa);
   border-radius: 0.5rem;
-  padding: 1rem 1.5rem;
   margin-bottom: 1.5rem;
+  gap: .25rem;
+  padding: 0 .5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #contenedor-detalles>div.datos-envio>p {
@@ -1135,7 +1186,7 @@ main#detalles-pedido>section#contenedor-detalles {
 #contenedor-detalles>article>div.producto-resumen {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: .25rem;
 }
 
 #contenedor-detalles>article>div>div.producto-info>h3 {
@@ -1147,7 +1198,6 @@ main#detalles-pedido>section#contenedor-detalles {
 }
 
 .producto-resumen .producto-precio {
-  margin-left: auto;
   font-weight: bold;
 }
 
@@ -1187,12 +1237,14 @@ main#detalles-pedido>h1 {
 main#menu-kitCumple>section>h2 {
   display: none;
 }
-main#menu-kitCumple > section > p{
+
+main#menu-kitCumple>section>p {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .filtro {
   display: flex;
   align-items: center;
@@ -1206,7 +1258,8 @@ main#menu-kitCumple > section > p{
   border-radius: 0.5rem;
   height: 2rem;
 }
-.cant-invt{
+
+.cant-invt {
   font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
   border-radius: 0.5rem;
@@ -1217,6 +1270,7 @@ main#menu-kitCumple > section > p{
   text-align: center;
   margin-top: 0.25rem;
 }
+
 .lista-product {
   display: flex;
   flex-flow: row wrap;
@@ -1238,13 +1292,14 @@ main#menu-kitCumple > section > p{
   border: 1px solid var(--azul);
   box-sizing: border-box;
   max-width: 10.7rem;
-  border-radius: 0.5rem;  
+  border-radius: 0.5rem;
 }
 
 .product-item {
   list-style-type: disc;
   padding-left: 1.75rem;
 }
+
 .product-img {
   width: 100%;
   border-radius: 0.5rem;
@@ -1252,20 +1307,22 @@ main#menu-kitCumple > section > p{
   /*para que la imagen siempre sea cuadrada*/
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  
+
 }
-.product-img-circular{
+
+.product-img-circular {
   width: 100%;
   border-radius: 50rem;
   max-width: 18rem;
 }
+
 .product-img-vertical {
   width: 100%;
   border-radius: 0.5rem;
   max-width: 18rem;
   /*para que la imagen siempre sea cuadrada*/
-  
-  
+
+
 }
 
 section>article>h2 {
@@ -1332,6 +1389,12 @@ h2.titleProductos {
 main#menu-kitCumple>section>article>label {
   font-size: 0.95rem;
   margin: 0.35rem 0;
+}
+
+div#mensaje-recuperacion {
+  display: none;
+  color: green;
+  margin-top: 10px;
 }
 
 /*Footer*/
@@ -1482,6 +1545,7 @@ div#politicas>small {
   body {
     font-size: 1.25rem;
   }
+
   header#top {
     display: flex;
     align-items: center;
@@ -1489,13 +1553,15 @@ div#politicas>small {
     flex-wrap: wrap;
     width: 100%;
   }
-  header#top > div {
+
+  header#top>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-  } 
+  }
+
   header#top>div {
     display: flex;
     flex-direction: column;
@@ -1513,11 +1579,11 @@ div#politicas>small {
     z-index: 980;
   }
 
-  header#top>div#vacio{
+  header#top>div#vacio {
     display: flex;
     padding: 1.1rem;
   }
-  
+
   header#top>div>div.fila-1>a#logoprin {
     position: absolute;
     left: 50%;
@@ -1657,9 +1723,11 @@ div#politicas>small {
     gap: 1rem;
 
   }
-  .titTopperPers{
+
+  .titTopperPers {
     width: 100%;
   }
+
   .carta-productos {
     margin-bottom: 1.25rem;
     flex-basis: 32%;
@@ -1669,17 +1737,46 @@ div#politicas>small {
   #menu-kitCumple>section>article>ul>li {
     font-size: 1rem;
   }
+
   .producto-carrito {
     width: 70%;
   }
-  .resumen-carrito{
+
+  .resumen-carrito {
     width: 70%;
   }
+
   main#carrito>section>button#btn-comprar {
     align-items: center;
     width: 70%;
   }
 
+  .producto-resumen,
+  .datos-envio,
+  .detalles-pago {
+    width: 70%;
+    padding: 1.5rem;
+  }
+  .producto-info{
+    padding: 1rem;
+  }
+  .producto-info{
+    padding: 0;
+  }
+  .producto-resumen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .producto-carrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  #carrito > section > article.producto-carrito > div.producto-mostrar > img{
+    width: 10rem;
+  }
   /*fOOTER*/
 
   footer {
@@ -1782,10 +1879,12 @@ div#politicas>small {
   #lista-footer>li {
     padding: .2rem;
   }
+
   /*Cookies*/
   div#aviso-cookies button {
     margin: 0 1rem;
   }
+
   a#config-cookies {
     margin: 0 1rem;
   }

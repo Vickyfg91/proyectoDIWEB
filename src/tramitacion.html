@@ -52,12 +52,12 @@
           <div class="iconos-derecha">
             <nav id="navUsuario">
               <ul>
-                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img class="iconos" src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" aria-label="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
+                <li><a href="accesoCuenta.html" aria-label="Ir a Usuario"><img class="icono" src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" aria-label="Ir a Usuario"><span>Iniciar Sesión</span></a></li>
               </ul>
             </nav>
             <nav id="navCarrito">
               <ul>
-                <li><a href="carrito.html" aria-label="Ir a Carrito"><img class="iconos" src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" aria-label="Ir a Carrito"><span id="txt">Carrito</span><span id="contador"> </span></a></li>
+                <li><a href="carrito.html" aria-label="Ir a Carrito"><img class="icono" src="../img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" aria-label="Ir a Carrito"><span id="txt">Carrito </span><span id="contador"></span></a></li>
               </ul>
             </nav>
           </div>
@@ -75,9 +75,9 @@
         </nav>
         <section id="datos">
           <h1>Tramitar pedido</h1>
-          <p><img class="iconos" src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario">¿Ya tienes cuenta? &nbsp; <a class="subrayada" href="accesoCuenta.html"> Haz clic aquí para acceder</a></p>
+          <p><img class="icono" src="../img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario">¿Ya tienes cuenta? &nbsp; <a class="subrayada" href="accesoCuenta.html"> Haz clic aquí para acceder</a></p>
           <h2>Detalles de facturación</h2>
-          <form class="formulario" method="post" action="pago.html" >
+          <form class="formulario" method="get" action="pago.html" >
               <label for="nombre">Nombre*</label>
               <input type="text" name="nombre" id="nombre" required>
               <label for="apellidos">Apellidos*</label>
@@ -99,9 +99,9 @@
             <h4 class="titleDatos">Selecciona el método de pago</h4>
               <div class="pago">
                 <input type="radio" name="pago" id="tarjeta" value="tarjeta" required checked>
-                <label for="tarjeta"> Pagar con tarjeta de débito/crédito <img class="iconos" src="../img/iconos_svg/IconoVisa.svg" alt="Visa" class="icono">&nbsp;<img class="iconos" src="../img/iconos_svg/IconMC.svg" alt="MasterCard" class="icono"></label><br>
+                <label for="tarjeta"> Pagar con tarjeta de débito/crédito <img class="icono" src="../img/iconos_svg/IconoVisa.svg" alt="Visa" class="icono">&nbsp;<img class="icono" src="../img/iconos_svg/IconMC.svg" alt="MasterCard" class="icono"></label><br>
                 <input type="radio" name="pago" id="paypal" value="paypal" >
-                <label for="paypal"> PayPal <img class="iconos" src="../img/iconos_svg/IconoPaypal.svg" alt="PayPal" class="icono"></label>
+                <label for="paypal"> PayPal <img class="icono" src="../img/iconos_svg/IconoPaypal.svg" alt="PayPal" class="icono"></label>
               </div>
             <h4 class="titleDatos">Crea tu cuenta</h4>
               <label for="password">Contraseña</label>
@@ -131,7 +131,7 @@
       </nav>
       <div id="footer-central">
         <div class="footer-form-newslet">
-          <form class="footer-form" action="/proceso-suscripcion" method="POST">
+          <form class="footer-form" action="/proceso-suscripcion" method="get" >
             <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
             <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
             <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>

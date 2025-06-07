@@ -74,15 +74,13 @@
       </nav>
 
       <h1>Accede a tu Cuenta</h1>
-      <form class="formulario">
+      <form class="formulario" method="get" action="carrito.html">
           <label for="emailacceso"></label>
           <input type="email" name="emailacceso" id="emailacceso" placeholder="Correo Electrónico" required>
           <input type="password" name="passwordacceso" id="passwordacceso" placeholder="Contraseña" required>
           <div id="recordatorio"><a href="recuperarCuenta.html" aria-label="Ir a Recordatorio de Contraseña">¿Has olvidado tu contraseña?</a></div>
           <button type="submit" id="btn-sesion" class="btn-rosa">Iniciar Sesión</button>
           <p class="centrado">¿Aún no te has registrado?<a class="subrayada" href="crearCuenta.html" aria-label="Ir a Registro"> Crea tu cuenta</a></p>
-          
-        
       </form>
     </main>
     <!--Pie de pagina-->
@@ -99,7 +97,7 @@
       </nav>
       <div id="footer-central">
         <div class="footer-form-newslet">
-          <form class="footer-form" action="detallesPedido.html" method="POST">
+          <form class="footer-form" action="/proceso-suscripcion" method="POST">
             <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
             <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
             <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>

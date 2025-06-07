@@ -75,7 +75,7 @@
         </nav>
         <section id="datos">
           <h1>Tramitar Pedido</h1>
-          <form class="formulario" method="post" action="/formulario_Compra" >  
+          <form class="formulario" method="get"  action="/formulario_Compra" >  
             <h4 class="titleDatos"> Detalles de facturación</h4> 
               <label for="direccion">Dirección (calle y número)*</label>
               <input type="text" name="Dirección" id="direccion" required>
@@ -127,7 +127,7 @@
       </nav>
       <div id="footer-central">
         <div class="footer-form-newslet">
-          <form class="footer-form" action="/proceso-suscripcion" method="POST">
+          <form class="footer-form" action="/proceso-suscripcion" method="get" >
             <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
             <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
             <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
