@@ -1247,9 +1247,10 @@ main#menu-kitCumple>section>p {
 
 .filtro {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0.5rem 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .order {
@@ -1525,8 +1526,9 @@ div#politicas>small {
 /* ============Versión tablet=============== */
 @media screen and (min-width: 768px) {
   .filtro {
+    width: 70%;
     font-size: 1.4rem;
-    margin: 1rem 4rem;
+    margin: 1rem auto;
   }
 
   main#main-index>section>div>section>article.item {
@@ -1716,24 +1718,26 @@ div#politicas>small {
   /*productos item*/
 
   .lista-product {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     justify-content: center;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 3rem;
 
   }
 
   .titTopperPers {
     width: 100%;
   }
-
   .carta-productos {
-    margin-bottom: 1.25rem;
-    flex-basis: 32%;
-    max-width: 20rem;
-  }
-
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: calc(33.333% - 2rem); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
   #menu-kitCumple>section>article>ul>li {
     font-size: 1rem;
   }
