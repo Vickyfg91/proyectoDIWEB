@@ -284,7 +284,6 @@ header#top>div>div.fila-1>a#logoprin>picture>img#logoPrincipal {
   width: 100%;
   height: auto;
   min-width: 8rem;
-
 }
 
 header#top>p#anuncio {
@@ -548,7 +547,7 @@ main#main-sobreMi>article#reproductor>section#reproductorVideo>div#barra>input[t
   object-fit: cover;
 }
 
-/**--[Caption/Texto sobre img]*/
+/*Texto sobre img*/
 .slider-wrapper .caption {
   position: absolute;
   bottom: 0;
@@ -1872,6 +1871,13 @@ div#politicas>small {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  #contenedor-detalles > article > div > div.producto-imagen > img{
+    max-width: 11rem;
+    width: 100%;
+    height: auto;
+    min-width: 8rem;
+    margin: 0;
   }
 
   #footer-central>div.central-footer>nav {
