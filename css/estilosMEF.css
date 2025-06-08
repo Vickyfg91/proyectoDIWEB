@@ -900,11 +900,6 @@ article.item a.producto {
   background-image: url("../img/archWeb/menajeMEF/1608048111.webp");
 }
 
-main#main-acceso,
-main#main-recuperar {
-  margin-bottom: 9rem;
-}
-
 /*Formularios*/
 main#main-acceso>form>div#recordatorio {
   text-align: center;
