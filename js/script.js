@@ -397,6 +397,21 @@ $(function () {
             }, 1000);
         });
 });
+//Mostrar mensaje de cuenta creada
+$(function () {
+    $('#crearCuenta').submit(function (event) {
+          event.preventDefault();
+
+        if (true) {
+            $('#cuenta_creada').addClass('show');
+            setTimeout(function () {
+                $('#cuenta_creada').removeClass('show'); 
+            }, 3000);
+
+        }
+    });
+});
+
 
 //Animar anuncio
 $(function () {
@@ -451,62 +466,48 @@ $(function () {
     });
 });
 
+
+// Para el formulario de newsletter, que tiene clase footer-form salga mensaje suscrito
 $(function () {
-    $('form.formulario').on('submit', function () {
-
-        const $form = $(this);
-
-        $form.find('input[required], textarea[required]').each(function () {
-            $(this).removeClass('input-error');
-            $(this).next('.error-msg').remove().finish();
-        });
-        $('#success-message').hide();
-        $('#error-message').hide();
-
-        let isValid = true;
-        $form.find('input[required], textarea[required]').each(function () {
-            if ($(this).val().trim() === '') {
-                isValid = false;
-                $(this).addClass('input-error');
-                if ($(this).next('.error-msg').length === 0) {
-                    $(this).after('<div class="error-msg" style="color:red; font-size: 0.9em;">Este campo es obligatorio y no puede estar vacío.</div>');
-                }
-            }
-        });
-
-        if (isValid) {
-            e.currentTarget.submit();
-        } else {
-            $('#success-message').show();
-            setTimeout(function () {
-                $('#success-message').hide();
-            }, 200);
-        }
-    });
-});
-
-
-$(function () {
-    // Para el formulario de newsletter, que tiene clase footer-form
+    
     $('form.footer-form').on('submit', function () {
         console.log('Submit formulario suscripcion');
-        const $form = $(this);
-        const $input = $form.find('input[name="newsletter"]');
-        const value = $input.val().trim();
 
-        let isValid = value !== '';
+        let isValid = $(this).find('input[name="newsletter"]').val().trim() !== '';
         if (isValid) {
             $('.subscrito-newsletter').show().finish();
         } else {
             $('.subscrito-newsletter').show().finish();
             setTimeout(function () {
                 $('.subscrito-newsletter').hide();
-            }, 200);
+            }, 2000);
         }
 
-        $form[0].reset();
     });
 });
+/*Para conseguir que al pulsar el botón suba arriba*/
+$('div#volverarriba').on('click', function(){
+
+    $('body,html').animate({
+        scrollTop:'0px'
+    },300);
+})
+ $(window).on('scroll',function() {
+    if($(this).scrollTop() > 10){ // Si la posición del scroll se mueve
+    $('div#volverarriba').fadeIn();
+    }else{
+    $('div#volverarriba').fadeOut();//Lo quitamos
+    }
+});
+/*Para conseguir que al pulsar el botón suba arriba*/
+$('div#volverarriba').on('click', function(){
+
+    $('body,html').animate({
+        scrollTop:'0px'
+    },300);
+})
+
+
 /*JS PARA REPRODUCTOR DE VIDEO*/
 var video = document.getElementById('video');
 var barraTiempo = document.getElementById('barraTiempo');

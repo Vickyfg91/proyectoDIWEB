@@ -73,7 +73,7 @@
         <span aria-current="page">CREAR CUENTA</span>
       </nav>
       <h1>Crea tu Cuenta</h1>
-      <form class="formulario" id="crearCuenta" method="get" >
+      <form class="formulario" id="crearCuenta" method="get">
         <label for="nombre">Nombre*</label>
         <input type="text" name="nombre" id="nombre" required>
         <label for="apellidos">Apellidos*</label>
@@ -84,6 +84,12 @@
         <input type="password" name="password" id="password" required>
         <button type="submit" id="btn-crear" class="btn-rosa">Crear Cuenta</button>
       </form>
+      <!-- cuenta_creada Notification -->
+      <div id="cuenta_creada" class="cuenta_creada">
+        <div class="cuenta_creada-content">
+          <span>¡Tu cuenta se ha creado correctamente! En breve recibiras un mail con la confirmación.</span>
+        </div>
+      </div>
     </main>
     <!--Pie de pagina-->
     <footer>
@@ -99,7 +105,7 @@
       </nav>
       <div id="footer-central">
         <div class="footer-form-newslet">
-          <form class="footer-form" action="/proceso-suscripcion" method="POST">
+          <form class="footer-form" id="proceso-suscripcion">
             <h4 class="tit-footer">Suscríbete a nuestra Newsletter</h4>
             <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
             <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required>
@@ -148,6 +154,7 @@
           <small>&copy; 2025 MAMAEDITATUFIESTA</small>
       </div>
     </footer>
+    <div id="volverarriba"><a href="#top">Volver arriba<span><i class="fa fa-sort-asc" aria-hidden="true"></i></span></a></div>
     <!-- SCRIPT -->
     <script src="../js/script.js"></script>
   </body>
